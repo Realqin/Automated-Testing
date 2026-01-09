@@ -23,8 +23,9 @@ SEARCH_CONFIG = {
     "渔船": {"filter_key": "shipType","description":"渔船"},
     "纯雷达": {"filter_key": "type","description":"纯雷达"},
     "AIS目标": {"filter_key": "type","description":"AIS目标"},
-    "北斗目标": {"filter_key": "type","description":"北斗目标"},
-    "AIS信息异常": {"filter_key": "mmsi","description":"AIS信息异常"}
+    "北斗目标": {"filter_key": "type","description":"北斗目标"}
+    #AIS信息异常、船舶目标用例没有写
+    # "AIS信息异常": {"filter_key": "mmsi,vesselName","description":"AIS信息异常"}
 
     # "船舶目标": {"filter_key": "len","description":"船舶目标"},
 }
@@ -55,7 +56,8 @@ def perform_search_and_assert(page, filter,filter_key: str, Condition: str):
         # page.locator(f"text={filter}").click()
         # page.get_by_role("button", name="{filter}").click()
 
-        page.locator(f"button:has-text('{filter}')").click()
+        # page.locator(f"button:has-text('{filter}')").click()
+        page.locator(f"button.default-group__inner-button:has-text('{filter}')").click()
         #制等2s，等待过滤响应
         sleep(2)
         # 等待数据就绪并获取
