@@ -1,0 +1,5 @@
+playwright==1.48.0
+pytest==8.3.0
+pytest-rerunfailures==14.0
+allure-playwright==0.6.0
+tkinter  # 标准库，无需安装
