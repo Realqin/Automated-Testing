@@ -38,8 +38,6 @@ def prepare_one_click_filter(page):
     global _one_click_setup_done
     if not _one_click_setup_done:
         log_info("首次执行：点击【目标筛选】→【一键筛选】")
-        page.locator("xpath=//html/body/div[1]/div/div[1]/main/div/div[2]/div[10]/div[3]/div[1]/span").click()
-        sleep(2)
         # page.locator("text=环渤海").click()
         page.locator("text=目标筛选").click()
         page.locator("text=一键筛选").click()

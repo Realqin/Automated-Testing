@@ -1,5 +1,7 @@
 # conftest.py
 import json
+from time import sleep
+
 import pytest
 from playwright.sync_api import sync_playwright
 from config.setting import *
@@ -131,6 +133,10 @@ def page(browser, global_data):
     page.wait_for_selector("#exit")
     page.wait_for_load_state("networkidle")  # 或 "load"
     log_info("登录成功")
+
+    #跳转到有目标的区域
+    page.locator("xpath=//html/body/div[1]/div/div[1]/main/div/div[2]/div[10]/div[3]/div[1]/span").click()
+    sleep(2)
 
     yield page
 
