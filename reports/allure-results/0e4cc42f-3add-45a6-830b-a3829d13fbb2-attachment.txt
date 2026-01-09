@@ -1,0 +1,6 @@
+2025-12-16 10:43:07,100 [INFO] 开始执行测试用例: test_target_search_by_field[terminal]
+2025-12-16 10:43:07,100 [INFO] 正在搜索 北斗号: None
+2025-12-16 10:43:12,208 [INFO] 接口返回状态码: 200
+2025-12-16 10:43:12,212 [INFO] 从JSON路径 $..terminal 获取值: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2025-12-16 10:43:12,213 [INFO] 期望值: None, 实际返回值: [None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None, None]
+2025-12-16 10:43:12,214 [INFO] 测试用例执行完成: test_target_search_by_field[terminal]

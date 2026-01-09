@@ -1,0 +1,6 @@
+INFO     automated_testing:logger.py:40 开始执行测试用例: test_target_search_by_field[callSign]
+INFO     automated_testing:logger.py:40 正在搜索 呼号: P
+ERROR    automated_testing:logger.py:43 搜索 呼号 时发生错误: Timeout 30000ms exceeded while waiting for event "response"
+=========================== logs ===========================
+waiting for response **/target/search*
+============================================================

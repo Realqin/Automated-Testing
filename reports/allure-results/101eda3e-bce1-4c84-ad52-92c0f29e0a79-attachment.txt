@@ -1,0 +1,8 @@
+INFO     automated_testing:logger.py:40 开始执行测试用例: test_target_search_by_field[terminal]
+INFO     automated_testing:logger.py:40 正在搜索 北斗号: 1017066
+INFO     automated_testing:logger.py:40 接口返回状态码: 200
+INFO     automated_testing:logger.py:40 从JSON路径 $..terminal 获取值: ['1017066']
+INFO     automated_testing:logger.py:40 从JSON路径 $..targetId 获取值: ['1017066']
+INFO     automated_testing:logger.py:40 从JSON路径 $..mmsi 获取值: [None]
+INFO     automated_testing:logger.py:40 期望值: 1017066, 实际返回值: [['1017066', '1017066', None]]
+INFO     automated_testing:logger.py:40 测试用例执行完成: test_target_search_by_field[terminal]

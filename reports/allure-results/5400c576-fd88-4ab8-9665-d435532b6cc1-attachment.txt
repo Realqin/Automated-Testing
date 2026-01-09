@@ -1,0 +1,44 @@
+INFO     automated_testing:logger.py:40 开始启动浏览器实例
+INFO     automated_testing:logger.py:40 浏览器实例启动成功
+INFO     automated_testing:logger.py:40 开始获取全局公共参数
+INFO     automated_testing:logger.py:40 正在请求登录接口获取token
+INFO     automated_testing:logger.py:40 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+INFO     automated_testing:logger.py:40 接口调用成功: 200
+INFO     automated_testing:logger.py:40 尝试从JSON路径 $.data.tokenValue 获取值
+INFO     automated_testing:logger.py:40 成功获取到值: 1dba556e-cac0-4f81-b516-2a397dc474a0
+INFO     automated_testing:logger.py:40 正在请求目标接口获取公共参数
+INFO     automated_testing:logger.py:40 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+INFO     automated_testing:logger.py:40 接口调用成功: 200
+INFO     automated_testing:logger.py:40 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+INFO     automated_testing:logger.py:40 接口调用成功: 200
+INFO     automated_testing:logger.py:40 尝试从JSON路径 $.data.data[*][0] 获取值
+INFO     automated_testing:logger.py:40 成功获取到值: 2512131242524069110
+INFO     automated_testing:logger.py:40 尝试从JSON路径 $.data.data[*][2] 获取值
+INFO     automated_testing:logger.py:40 成功获取到值: 412764120
+INFO     automated_testing:logger.py:40 尝试从JSON路径 $.data.data[*][32] 获取值
+INFO     automated_testing:logger.py:40 成功获取到值: P
+INFO     automated_testing:logger.py:40 尝试从JSON路径 $.data.data[*][31] 获取值
+INFO     automated_testing:logger.py:40 成功获取到值: 1038602
+INFO     automated_testing:logger.py:40 尝试从JSON路径 $.data.data[*][21] 获取值
+INFO     automated_testing:logger.py:40 成功获取到值: 854787
+INFO     automated_testing:logger.py:40 尝试从JSON路径 $.data.data[*][14] 获取值
+INFO     automated_testing:logger.py:40 成功获取到值: ZHONGHAIYOUGONG11
+INFO     automated_testing:logger.py:40 尝试从JSON路径 $.data.data[*][13] 获取值
+INFO     automated_testing:logger.py:40 成功获取到值: 鲁长渔养71003
+INFO     automated_testing:logger.py:40 获取到的参数: targetId=2512131242524069110, mmsi=412764120, callSign=P, imo=1038602, terminal=854787, vesselName=ZHONGHAIYOUGONG11, shipName=鲁长渔养71003
+INFO     automated_testing:logger.py:40 全局公共参数获取成功
+INFO     automated_testing:logger.py:40 开始创建页面并执行登录
+INFO     automated_testing:logger.py:40 正在导航到登录页面: http://10.100.0.184:11080/login
+INFO     automated_testing:logger.py:40 正在执行登录操作
+INFO     automated_testing:logger.py:40 登录成功
+INFO     automated_testing:logger.py:40 开始执行测试用例: test_target_search_by_field[mmsi]
+INFO     automated_testing:logger.py:40 正在搜索 MMSI: 412764120
+INFO     automated_testing:logger.py:40 接口返回状态码: 200
+INFO     automated_testing:logger.py:40 从JSON路径 $..callSign 获取值: ['P']
+INFO     automated_testing:logger.py:40 从JSON路径 $..targetId 获取值: ['1996856969016659971']
+INFO     automated_testing:logger.py:40 从JSON路径 $..mmsi 获取值: [412764120]
+INFO     automated_testing:logger.py:40 从JSON路径 $..vesselName 获取值: ['ZHONGHAIYOUGONG11']
+INFO     automated_testing:logger.py:40 从JSON路径 $..shipName 获取值: [None]
+INFO     automated_testing:logger.py:40 从JSON路径 $..imo 获取值: [None]
+INFO     automated_testing:logger.py:40 期望值: 412764120, 实际返回值: [['P', '1996856969016659971', 412764120, 'ZHONGHAIYOUGONG11', None, None]]
+INFO     automated_testing:logger.py:40 测试用例执行完成: test_target_search_by_field[mmsi]

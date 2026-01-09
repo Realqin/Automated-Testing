@@ -1,0 +1,8 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"统一入口：通过不同字段搜索目标","9089","test_target_search_by_field[mmsi]","tests.test_target.test_target_search","2025-12-16","passed","2025-12-16","","test_target_search","",""
+"统一入口：通过不同字段搜索目标","2897","test_target_search_by_field[callSign]","tests.test_target.test_target_search","2025-12-16","failed","2025-12-16","","test_target_search","",""
+"统一入口：通过不同字段搜索目标","5115","test_target_search_by_field[terminal]","tests.test_target.test_target_search","2025-12-16","passed","2025-12-16","","test_target_search","",""
+"统一入口：通过不同字段搜索目标","7532","test_target_search_by_field[targetId]","tests.test_target.test_target_search","2025-12-16","passed","2025-12-16","","test_target_search","",""
+"统一入口：通过不同字段搜索目标","10705","test_target_search_by_field[shipName]","tests.test_target.test_target_search","2025-12-16","passed","2025-12-16","","test_target_search","",""
+"统一入口：通过不同字段搜索目标","7591","test_target_search_by_field[imo]","tests.test_target.test_target_search","2025-12-16","passed","2025-12-16","","test_target_search","",""
+"统一入口：通过不同字段搜索目标","4641","test_target_search_by_field[vesselName]","tests.test_target.test_target_search","2025-12-16","failed","2025-12-16","","test_target_search","",""

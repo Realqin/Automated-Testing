@@ -1,0 +1,9 @@
+INFO     automated_testing:logger.py:40 开始执行测试用例: test_target_search_by_field[targetId]
+INFO     automated_testing:logger.py:40 正在搜索 目标ID: 2512140802424094885
+INFO     automated_testing:logger.py:40 接口返回状态码: 200
+INFO     automated_testing:logger.py:40 从JSON路径 $..targetId 获取值: ['2512140802424094885']
+INFO     automated_testing:logger.py:40 期望值: 2512140802424094885, 实际返回值: ['2512140802424094885']
+INFO     automated_testing:logger.py:40 测试用例执行完成: test_target_search_by_field[targetId]
+ERROR    automated_testing:logger.py:43 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+INFO     automated_testing:logger.py:40 页面上下文已关闭
+INFO     automated_testing:logger.py:40 浏览器实例已关闭

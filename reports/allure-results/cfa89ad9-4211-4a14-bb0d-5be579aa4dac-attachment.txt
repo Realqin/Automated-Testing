@@ -1,0 +1,8 @@
+2025-12-16 14:32:23,321 [INFO] 开始执行测试用例: test_target_search_by_field[callSign]
+2025-12-16 14:32:23,321 [INFO] 正在搜索 呼号: BTAW
+2025-12-16 14:32:26,006 [INFO] 接口返回状态码: 200
+2025-12-16 14:32:26,011 [INFO] 从JSON路径 $..callSign 获取值: ['BTAW', 'BTAW', 'T[VER0L']
+2025-12-16 14:32:26,011 [INFO] 从JSON路径 $..targetId 获取值: [None, None, None]
+2025-12-16 14:32:26,011 [INFO] 从JSON路径 $..mmsi 获取值: [412000120, 413241782, 506907062]
+2025-12-16 14:32:26,011 [INFO] 期望值: BTAW, 实际返回值: [['BTAW', None, 412000120], ['BTAW', None, 413241782], ['T[VER0L', None, 506907062]]
+2025-12-16 14:32:26,013 [INFO] 测试用例执行完成: test_target_search_by_field[callSign]

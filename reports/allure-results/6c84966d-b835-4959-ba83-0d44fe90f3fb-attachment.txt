@@ -1,0 +1,11 @@
+2025-12-16 14:36:50,819 [INFO] 开始执行测试用例: test_target_search_by_field[terminal]
+2025-12-16 14:36:50,819 [INFO] 正在搜索 北斗号: 854787
+2025-12-16 14:37:03,045 [INFO] 接口返回状态码: 200
+2025-12-16 14:37:03,050 [INFO] 从JSON路径 $..callSign 获取值: [None, None, 'QFNDO', None, None, '!\\', 'UNKNOWN', None]
+2025-12-16 14:37:03,050 [INFO] 从JSON路径 $..targetId 获取值: ['854787', None, None, None, None, None, None, None]
+2025-12-16 14:37:03,050 [INFO] 从JSON路径 $..mmsi 获取值: [None, 9854787, 308547870, 304854787, 684854787, 408854787, 338547879, 413854787]
+2025-12-16 14:37:03,051 [INFO] 从JSON路径 $..vesselName 获取值: [None, 'PJ7R60669', None, 'YUEHUIZHOUHUO9662', None, 'R', 'LADY AUSTIN', 'JINHONGJI668']
+2025-12-16 14:37:03,051 [INFO] 从JSON路径 $..shipName 获取值: ['鲁长渔养71003', None, None, None, None, None, None, None]
+2025-12-16 14:37:03,051 [INFO] 从JSON路径 $..imo 获取值: [None, None, None, None, None, None, None, None]
+2025-12-16 14:37:03,051 [INFO] 期望值: 854787, 实际返回值: [[None, '854787', None, None, '鲁长渔养71003', None], [None, None, 9854787, 'PJ7R60669', None, None], ['QFNDO', None, 308547870, None, None, None], [None, None, 304854787, 'YUEHUIZHOUHUO9662', None, None], [None, None, 684854787, None, None, None], ['!\\', None, 408854787, 'R', None, None], ['UNKNOWN', None, 338547879, 'LADY AUSTIN', None, None], [None, None, 413854787, 'JINHONGJI668', None, None]]
+2025-12-16 14:37:03,052 [INFO] 测试用例执行完成: test_target_search_by_field[terminal]

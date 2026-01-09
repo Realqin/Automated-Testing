@@ -1,0 +1,6 @@
+2025-12-16 14:32:39,077 [INFO] 开始执行测试用例: test_target_search_by_field[vesselName]
+2025-12-16 14:32:39,077 [INFO] 正在搜索 北斗船名: HAIXUN 03001
+2025-12-16 14:32:42,207 [INFO] 接口返回状态码: 200
+2025-12-16 14:32:42,213 [INFO] 从JSON路径 $..vesselName 获取值: ['HAI XUN 03001', 'XIANGHAIXUN03001']
+2025-12-16 14:32:42,213 [INFO] 期望值: HAIXUN 03001, 实际返回值: ['HAI XUN 03001', 'XIANGHAIXUN03001']
+2025-12-16 14:32:42,215 [INFO] 测试用例执行完成: test_target_search_by_field[vesselName]

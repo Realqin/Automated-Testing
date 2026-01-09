@@ -1,0 +1,6 @@
+2025-12-16 10:42:56,599 [INFO] 开始执行测试用例: test_target_search_by_field[callSign]
+2025-12-16 10:42:56,599 [INFO] 正在搜索 呼号: BTBH
+2025-12-16 10:42:59,489 [INFO] 接口返回状态码: 200
+2025-12-16 10:42:59,494 [INFO] 从JSON路径 $..callSign 获取值: ['BTBH', 'BTBH3', None, None, 'DWA5366', None, None, None, None]
+2025-12-16 10:42:59,494 [INFO] 期望值: BTBH, 实际返回值: ['BTBH', 'BTBH3', None, None, 'DWA5366', None, None, None, None]
+2025-12-16 10:42:59,496 [INFO] 测试用例执行完成: test_target_search_by_field[callSign]

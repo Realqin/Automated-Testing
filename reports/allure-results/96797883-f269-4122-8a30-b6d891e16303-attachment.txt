@@ -1,0 +1,11 @@
+2025-12-16 14:37:03,088 [INFO] 开始执行测试用例: test_target_search_by_field[vesselName]
+2025-12-16 14:37:03,088 [INFO] 正在搜索 北斗船名: ZHONGHAIYOUGONG11
+2025-12-16 14:37:06,076 [INFO] 接口返回状态码: 200
+2025-12-16 14:37:06,080 [INFO] 从JSON路径 $..callSign 获取值: ['P']
+2025-12-16 14:37:06,081 [INFO] 从JSON路径 $..targetId 获取值: [None]
+2025-12-16 14:37:06,081 [INFO] 从JSON路径 $..mmsi 获取值: [412764120]
+2025-12-16 14:37:06,081 [INFO] 从JSON路径 $..vesselName 获取值: ['ZHONGHAIYOUGONG11']
+2025-12-16 14:37:06,081 [INFO] 从JSON路径 $..shipName 获取值: [None]
+2025-12-16 14:37:06,081 [INFO] 从JSON路径 $..imo 获取值: ['448']
+2025-12-16 14:37:06,081 [INFO] 期望值: ZHONGHAIYOUGONG11, 实际返回值: [['P', None, 412764120, 'ZHONGHAIYOUGONG11', None, '448']]
+2025-12-16 14:37:06,084 [INFO] 测试用例执行完成: test_target_search_by_field[vesselName]

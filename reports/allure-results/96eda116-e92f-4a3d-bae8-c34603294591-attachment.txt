@@ -1,0 +1,11 @@
+INFO     automated_testing:logger.py:40 开始执行测试用例: test_target_search_by_field[terminal]
+INFO     automated_testing:logger.py:40 正在搜索 北斗号: 850230
+INFO     automated_testing:logger.py:40 接口返回状态码: 200
+INFO     automated_testing:logger.py:40 从JSON路径 $..callSign 获取值: [None, '78%', None, 'GRAY', None, 'DATL0', '0', 'BGE']
+INFO     automated_testing:logger.py:40 从JSON路径 $..targetId 获取值: ['850230', None, None, None, None, None, None, None]
+INFO     automated_testing:logger.py:40 从JSON路径 $..mmsi 获取值: [None, 96850230, 18850230, 338502305, 965850230, 258502306, 433850230, 144850230]
+INFO     automated_testing:logger.py:40 从JSON路径 $..vesselName 获取值: [None, '8502-30-78%', None, 'GRAY GHOST', None, 'BG!BOCTON', None, 'JLNBANCUAIHANG+ %AE']
+INFO     automated_testing:logger.py:40 从JSON路径 $..shipName 获取值: ['鲁长渔养64536', None, None, None, None, None, None, None]
+INFO     automated_testing:logger.py:40 从JSON路径 $..imo 获取值: [None, None, None, None, None, '9230062', None, '1049134']
+INFO     automated_testing:logger.py:40 期望值: 850230, 实际返回值: [[None, '850230', None, None, '鲁长渔养64536', None], ['78%', None, 96850230, '8502-30-78%', None, None], [None, None, 18850230, None, None, None], ['GRAY', None, 338502305, 'GRAY GHOST', None, None], [None, None, 965850230, None, None, None], ['DATL0', None, 258502306, 'BG!BOCTON', None, '9230062'], ['0', None, 433850230, None, None, None], ['BGE', None, 144850230, 'JLNBANCUAIHANG+ %AE', None, '1049134']]
+INFO     automated_testing:logger.py:40 测试用例执行完成: test_target_search_by_field[terminal]

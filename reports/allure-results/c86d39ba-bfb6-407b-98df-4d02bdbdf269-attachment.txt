@@ -1,0 +1,11 @@
+INFO     automated_testing:logger.py:40 开始执行测试用例: test_target_search_by_field[vesselName]
+INFO     automated_testing:logger.py:40 正在搜索 北斗船名: ZHONGHAIYOUGONG11
+INFO     automated_testing:logger.py:40 接口返回状态码: 200
+INFO     automated_testing:logger.py:40 从JSON路径 $..callSign 获取值: ['P']
+INFO     automated_testing:logger.py:40 从JSON路径 $..targetId 获取值: [None]
+INFO     automated_testing:logger.py:40 从JSON路径 $..mmsi 获取值: [412764120]
+INFO     automated_testing:logger.py:40 从JSON路径 $..vesselName 获取值: ['ZHONGHAIYOUGONG11']
+INFO     automated_testing:logger.py:40 从JSON路径 $..shipName 获取值: [None]
+INFO     automated_testing:logger.py:40 从JSON路径 $..imo 获取值: ['448']
+INFO     automated_testing:logger.py:40 期望值: ZHONGHAIYOUGONG11, 实际返回值: [['P', None, 412764120, 'ZHONGHAIYOUGONG11', None, '448']]
+INFO     automated_testing:logger.py:40 测试用例执行完成: test_target_search_by_field[vesselName]

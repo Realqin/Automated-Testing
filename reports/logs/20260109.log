@@ -1,0 +1,1502 @@
+2026-01-09 10:19:20,262 [INFO] 开始启动浏览器实例
+2026-01-09 10:19:21,056 [INFO] 浏览器实例启动成功
+2026-01-09 10:19:23,148 [INFO] 开始获取全局公共参数
+2026-01-09 10:19:23,148 [INFO] 正在请求登录接口获取token
+2026-01-09 10:19:23,148 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 10:19:25,382 [INFO] 接口调用成功: 200
+2026-01-09 10:19:27,430 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 10:19:27,431 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 10:19:27,431 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 10:19:27,447 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 10:19:30,944 [INFO] 接口调用成功: 200
+2026-01-09 10:19:32,988 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 10:19:35,462 [INFO] 接口调用成功: 200
+2026-01-09 10:19:37,528 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 10:19:37,528 [INFO] 成功获取到值: 2601090218534074612
+2026-01-09 10:19:37,553 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 10:19:37,554 [INFO] 成功获取到值: 413465160
+2026-01-09 10:19:37,579 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 10:19:37,579 [INFO] 成功获取到值: BPCP5
+2026-01-09 10:19:37,602 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 10:19:37,603 [INFO] 成功获取到值: 1026738
+2026-01-09 10:19:37,619 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 10:19:37,619 [INFO] 成功获取到值: 163331
+2026-01-09 10:19:37,646 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 10:19:37,647 [INFO] 成功获取到值: BAO DE1116
+2026-01-09 10:19:37,660 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 10:19:37,661 [INFO] 成功获取到值: 鲁岚渔养79101
+2026-01-09 10:19:37,661 [INFO] 获取到的参数: targetId=2601090218534074612, mmsi=413465160, callSign=BPCP5, imo=1026738, terminal=163331, vesselName=BAO DE1116, shipName=鲁岚渔养79101
+2026-01-09 10:19:39,704 [INFO] 全局公共参数获取成功
+2026-01-09 10:19:39,705 [INFO] 开始创建页面并执行登录
+2026-01-09 10:19:40,040 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 10:19:53,375 [INFO] 正在执行登录操作
+2026-01-09 10:19:54,656 [INFO] 登录成功
+2026-01-09 10:19:54,657 [INFO] 首次执行：点击【目标筛选】→【一键筛选】
+2026-01-09 10:19:59,932 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[小目标]
+2026-01-09 10:20:29,959 [ERROR] 搜索 小目标 时发生错误: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="{filter}")
+
+2026-01-09 10:20:30,145 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:20:30,145 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[高速目标]
+2026-01-09 10:21:00,175 [ERROR] 搜索 高速目标 时发生错误: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="{filter}")
+
+2026-01-09 10:21:00,259 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:21:00,260 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[低速目标]
+2026-01-09 10:21:30,308 [ERROR] 搜索 低速目标 时发生错误: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="{filter}")
+
+2026-01-09 10:21:30,398 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:21:30,399 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 10:22:00,793 [ERROR] 搜索 非大陆籍 时发生错误: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="{filter}")
+
+2026-01-09 10:22:00,880 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:22:00,880 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[渔船]
+2026-01-09 10:22:30,926 [ERROR] 搜索 渔船 时发生错误: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="{filter}")
+
+2026-01-09 10:22:31,014 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:22:31,015 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 10:23:01,048 [ERROR] 搜索 纯雷达 时发生错误: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="{filter}")
+
+2026-01-09 10:23:01,137 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:23:01,138 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 10:23:31,186 [ERROR] 搜索 AIS目标 时发生错误: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="{filter}")
+
+2026-01-09 10:23:31,295 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:23:31,295 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[北斗目标]
+2026-01-09 10:24:01,336 [ERROR] 搜索 北斗目标 时发生错误: Locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for get_by_role("button", name="{filter}")
+
+2026-01-09 10:24:03,045 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 10:24:03,071 [INFO] 页面上下文已关闭
+2026-01-09 10:24:03,621 [INFO] 浏览器实例已关闭
+2026-01-09 10:24:10,142 [INFO] 开始启动浏览器实例
+2026-01-09 10:24:10,946 [INFO] 浏览器实例启动成功
+2026-01-09 10:24:13,047 [INFO] 开始获取全局公共参数
+2026-01-09 10:24:13,047 [INFO] 正在请求登录接口获取token
+2026-01-09 10:24:13,047 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 10:24:15,252 [INFO] 接口调用成功: 200
+2026-01-09 10:24:17,289 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 10:24:17,289 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 10:24:17,289 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 10:24:17,291 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 10:24:19,941 [INFO] 接口调用成功: 200
+2026-01-09 10:24:21,983 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 10:24:24,471 [INFO] 接口调用成功: 200
+2026-01-09 10:24:26,541 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 10:24:26,541 [INFO] 成功获取到值: 2601041845134031836
+2026-01-09 10:24:26,569 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 10:24:26,569 [INFO] 成功获取到值: 412011250
+2026-01-09 10:24:26,592 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 10:24:26,592 [INFO] 成功获取到值: BOSD9
+2026-01-09 10:24:26,620 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 10:24:26,620 [INFO] 成功获取到值: 1026738
+2026-01-09 10:24:26,635 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 10:24:26,635 [INFO] 成功获取到值: 1014477
+2026-01-09 10:24:26,660 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 10:24:26,660 [INFO] 成功获取到值: QINGANG16
+2026-01-09 10:24:26,675 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 10:24:26,675 [INFO] 成功获取到值: 鲁莱州渔养68883
+2026-01-09 10:24:26,675 [INFO] 获取到的参数: targetId=2601041845134031836, mmsi=412011250, callSign=BOSD9, imo=1026738, terminal=1014477, vesselName=QINGANG16, shipName=鲁莱州渔养68883
+2026-01-09 10:24:28,723 [INFO] 全局公共参数获取成功
+2026-01-09 10:24:28,725 [INFO] 开始创建页面并执行登录
+2026-01-09 10:24:28,977 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 10:24:47,335 [INFO] 正在执行登录操作
+2026-01-09 10:24:48,902 [INFO] 登录成功
+2026-01-09 10:24:48,903 [INFO] 首次执行：点击【目标筛选】→【一键筛选】
+2026-01-09 10:24:54,185 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[小目标]
+2026-01-09 10:24:58,401 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[小目标]
+2026-01-09 10:24:58,409 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:24:58,409 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[高速目标]
+2026-01-09 10:25:02,573 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[高速目标]
+2026-01-09 10:25:02,608 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:25:02,609 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[低速目标]
+2026-01-09 10:25:06,749 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[低速目标]
+2026-01-09 10:25:06,764 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:25:06,766 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 10:25:10,913 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 10:25:10,967 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:25:10,968 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[渔船]
+2026-01-09 10:25:15,091 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[渔船]
+2026-01-09 10:25:15,108 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:25:15,109 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 10:25:19,273 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 10:25:19,313 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:25:19,314 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 10:25:23,472 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 10:25:23,485 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:25:23,486 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[北斗目标]
+2026-01-09 10:25:27,649 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[北斗目标]
+2026-01-09 10:25:28,842 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 10:25:28,868 [INFO] 页面上下文已关闭
+2026-01-09 10:25:29,377 [INFO] 浏览器实例已关闭
+2026-01-09 10:28:01,559 [INFO] 开始启动浏览器实例
+2026-01-09 10:28:02,285 [INFO] 浏览器实例启动成功
+2026-01-09 10:28:04,368 [INFO] 开始获取全局公共参数
+2026-01-09 10:28:04,368 [INFO] 正在请求登录接口获取token
+2026-01-09 10:28:04,368 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 10:28:06,585 [INFO] 接口调用成功: 200
+2026-01-09 10:28:08,625 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 10:28:08,625 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 10:28:08,626 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 10:28:08,627 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 10:28:11,880 [INFO] 接口调用成功: 200
+2026-01-09 10:28:13,918 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 10:28:16,522 [INFO] 接口调用成功: 200
+2026-01-09 10:28:18,588 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 10:28:18,589 [INFO] 成功获取到值: 2512161257554016347
+2026-01-09 10:28:18,611 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 10:28:18,611 [INFO] 成功获取到值: 413327750
+2026-01-09 10:28:18,633 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 10:28:18,634 [INFO] 成功获取到值: BPVK4
+2026-01-09 10:28:18,659 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 10:28:18,659 [INFO] 成功获取到值: 1026738
+2026-01-09 10:28:18,674 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 10:28:18,674 [INFO] 成功获取到值: 1434862
+2026-01-09 10:28:18,697 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 10:28:18,697 [INFO] 成功获取到值: YAN JIAO GONG 1 HAO
+2026-01-09 10:28:18,711 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 10:28:18,711 [INFO] 成功获取到值: 鲁荣渔59367
+2026-01-09 10:28:18,712 [INFO] 获取到的参数: targetId=2512161257554016347, mmsi=413327750, callSign=BPVK4, imo=1026738, terminal=1434862, vesselName=YAN JIAO GONG 1 HAO, shipName=鲁荣渔59367
+2026-01-09 10:28:20,756 [INFO] 全局公共参数获取成功
+2026-01-09 10:28:20,758 [INFO] 开始创建页面并执行登录
+2026-01-09 10:28:21,105 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 10:28:34,893 [INFO] 正在执行登录操作
+2026-01-09 10:28:36,169 [INFO] 登录成功
+2026-01-09 10:28:36,169 [INFO] 首次执行：点击【目标筛选】→【一键筛选】
+2026-01-09 10:28:36,653 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[小目标]
+2026-01-09 10:28:36,673 [ERROR] 搜索 小目标 时发生错误: Locator.click: Error: "has-text" engine expects a single string
+    at Object.matches (<anonymous>:5355:13)
+    at <anonymous>:5217:21
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._callMatches (<anonymous>:5216:17)
+    at SelectorEvaluatorImpl._matchesEngine (<anonymous>:5203:19)
+    at <anonymous>:5130:50
+    at Array.filter (<anonymous>)
+    at <anonymous>:5130:31
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:5110:17)
+Call log:
+  - waiting for locator("button:has-text(小目标)")
+
+2026-01-09 10:28:36,845 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:28:36,845 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[高速目标]
+2026-01-09 10:28:36,864 [ERROR] 搜索 高速目标 时发生错误: Locator.click: Error: "has-text" engine expects a single string
+    at Object.matches (<anonymous>:5355:13)
+    at <anonymous>:5217:21
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._callMatches (<anonymous>:5216:17)
+    at SelectorEvaluatorImpl._matchesEngine (<anonymous>:5203:19)
+    at <anonymous>:5130:50
+    at Array.filter (<anonymous>)
+    at <anonymous>:5130:31
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:5110:17)
+Call log:
+  - waiting for locator("button:has-text(高速目标)")
+
+2026-01-09 10:28:36,948 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:28:36,948 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[低速目标]
+2026-01-09 10:28:36,967 [ERROR] 搜索 低速目标 时发生错误: Locator.click: Error: "has-text" engine expects a single string
+    at Object.matches (<anonymous>:5355:13)
+    at <anonymous>:5217:21
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._callMatches (<anonymous>:5216:17)
+    at SelectorEvaluatorImpl._matchesEngine (<anonymous>:5203:19)
+    at <anonymous>:5130:50
+    at Array.filter (<anonymous>)
+    at <anonymous>:5130:31
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:5110:17)
+Call log:
+  - waiting for locator("button:has-text(低速目标)")
+
+2026-01-09 10:28:37,052 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:28:37,053 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 10:28:37,066 [ERROR] 搜索 非大陆籍 时发生错误: Locator.click: Error: "has-text" engine expects a single string
+    at Object.matches (<anonymous>:5355:13)
+    at <anonymous>:5217:21
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._callMatches (<anonymous>:5216:17)
+    at SelectorEvaluatorImpl._matchesEngine (<anonymous>:5203:19)
+    at <anonymous>:5130:50
+    at Array.filter (<anonymous>)
+    at <anonymous>:5130:31
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:5110:17)
+Call log:
+  - waiting for locator("button:has-text(非大陆籍)")
+
+2026-01-09 10:28:37,152 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:28:37,153 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[渔船]
+2026-01-09 10:28:37,168 [ERROR] 搜索 渔船 时发生错误: Locator.click: Error: "has-text" engine expects a single string
+    at Object.matches (<anonymous>:5355:13)
+    at <anonymous>:5217:21
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._callMatches (<anonymous>:5216:17)
+    at SelectorEvaluatorImpl._matchesEngine (<anonymous>:5203:19)
+    at <anonymous>:5130:50
+    at Array.filter (<anonymous>)
+    at <anonymous>:5130:31
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:5110:17)
+Call log:
+  - waiting for locator("button:has-text(渔船)")
+
+2026-01-09 10:28:37,247 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:28:37,248 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 10:28:37,267 [ERROR] 搜索 纯雷达 时发生错误: Locator.click: Error: "has-text" engine expects a single string
+    at Object.matches (<anonymous>:5355:13)
+    at <anonymous>:5217:21
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._callMatches (<anonymous>:5216:17)
+    at SelectorEvaluatorImpl._matchesEngine (<anonymous>:5203:19)
+    at <anonymous>:5130:50
+    at Array.filter (<anonymous>)
+    at <anonymous>:5130:31
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:5110:17)
+Call log:
+  - waiting for locator("button:has-text(纯雷达)")
+
+2026-01-09 10:28:37,368 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:28:37,369 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 10:28:37,386 [ERROR] 搜索 AIS目标 时发生错误: Locator.click: Error: "has-text" engine expects a single string
+    at Object.matches (<anonymous>:5355:13)
+    at <anonymous>:5217:21
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._callMatches (<anonymous>:5216:17)
+    at SelectorEvaluatorImpl._matchesEngine (<anonymous>:5203:19)
+    at <anonymous>:5130:50
+    at Array.filter (<anonymous>)
+    at <anonymous>:5130:31
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:5110:17)
+Call log:
+  - waiting for locator("button:has-text(AIS目标)")
+
+2026-01-09 10:28:37,472 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:28:37,473 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[北斗目标]
+2026-01-09 10:28:37,488 [ERROR] 搜索 北斗目标 时发生错误: Locator.click: Error: "has-text" engine expects a single string
+    at Object.matches (<anonymous>:5355:13)
+    at <anonymous>:5217:21
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._callMatches (<anonymous>:5216:17)
+    at SelectorEvaluatorImpl._matchesEngine (<anonymous>:5203:19)
+    at <anonymous>:5130:50
+    at Array.filter (<anonymous>)
+    at <anonymous>:5130:31
+    at SelectorEvaluatorImpl._cached (<anonymous>:5019:20)
+    at SelectorEvaluatorImpl._querySimple (<anonymous>:5110:17)
+Call log:
+  - waiting for locator("button:has-text(北斗目标)")
+
+2026-01-09 10:28:38,248 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 10:28:38,276 [INFO] 页面上下文已关闭
+2026-01-09 10:28:38,817 [INFO] 浏览器实例已关闭
+2026-01-09 10:30:21,079 [INFO] 开始启动浏览器实例
+2026-01-09 10:30:21,853 [INFO] 浏览器实例启动成功
+2026-01-09 10:30:23,926 [INFO] 开始获取全局公共参数
+2026-01-09 10:30:23,927 [INFO] 正在请求登录接口获取token
+2026-01-09 10:30:23,927 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 10:30:26,150 [INFO] 接口调用成功: 200
+2026-01-09 10:30:28,193 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 10:30:28,193 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 10:30:28,194 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 10:30:28,211 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 10:30:31,089 [INFO] 接口调用成功: 200
+2026-01-09 10:30:33,127 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 10:30:36,869 [INFO] 接口调用成功: 200
+2026-01-09 10:30:38,951 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 10:30:38,952 [INFO] 成功获取到值: 2601081727094062159
+2026-01-09 10:30:38,982 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 10:30:38,982 [INFO] 成功获取到值: 413376090
+2026-01-09 10:30:39,011 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 10:30:39,011 [INFO] 成功获取到值: BPCP5
+2026-01-09 10:30:39,039 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 10:30:39,040 [INFO] 成功获取到值: 1026738
+2026-01-09 10:30:39,056 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 10:30:39,056 [INFO] 成功获取到值: 163453
+2026-01-09 10:30:39,080 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 10:30:39,080 [INFO] 成功获取到值: YOU YI CHANG SHUN
+2026-01-09 10:30:39,094 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 10:30:39,094 [INFO] 成功获取到值: 鲁东港渔养69101
+2026-01-09 10:30:39,095 [INFO] 获取到的参数: targetId=2601081727094062159, mmsi=413376090, callSign=BPCP5, imo=1026738, terminal=163453, vesselName=YOU YI CHANG SHUN, shipName=鲁东港渔养69101
+2026-01-09 10:30:41,132 [INFO] 全局公共参数获取成功
+2026-01-09 10:30:41,134 [INFO] 开始创建页面并执行登录
+2026-01-09 10:30:41,419 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 10:30:51,280 [INFO] 正在执行登录操作
+2026-01-09 10:30:52,525 [INFO] 登录成功
+2026-01-09 10:30:52,525 [INFO] 首次执行：点击【目标筛选】→【一键筛选】
+2026-01-09 10:30:57,819 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[小目标]
+2026-01-09 10:31:02,131 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[小目标]
+2026-01-09 10:31:02,134 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:31:02,136 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[高速目标]
+2026-01-09 10:31:06,276 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[高速目标]
+2026-01-09 10:31:06,281 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:31:06,282 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[低速目标]
+2026-01-09 10:31:10,433 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[低速目标]
+2026-01-09 10:31:10,461 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:31:10,462 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 10:31:14,607 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 10:31:14,614 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:31:14,615 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[渔船]
+2026-01-09 10:31:18,772 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[渔船]
+2026-01-09 10:31:18,787 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:31:18,788 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 10:31:22,922 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 10:31:22,935 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:31:22,936 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 10:31:27,077 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 10:31:27,108 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:31:27,110 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[北斗目标]
+2026-01-09 10:31:27,151 [ERROR] 搜索 北斗目标 时发生错误: Locator.click: Error: strict mode violation: locator("button:has-text('北斗目标')") resolved to 2 elements:
+    1) <button type="button" class="ant-btn default-group__inner-button ant-btn-primary">…</button> aka get_by_role("button", name="北斗目标")
+    2) <button title="北斗目标" type="button" class="ant-btn targetTypeFiltering__inner-button targetTypeFiltering__inner-button-check">…</button> aka get_by_title("北斗目标")
+
+Call log:
+  - waiting for locator("button:has-text('北斗目标')")
+
+2026-01-09 10:31:28,291 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 10:31:28,319 [INFO] 页面上下文已关闭
+2026-01-09 10:31:28,870 [INFO] 浏览器实例已关闭
+2026-01-09 10:36:50,682 [INFO] 开始启动浏览器实例
+2026-01-09 10:36:51,376 [INFO] 浏览器实例启动成功
+2026-01-09 10:36:53,467 [INFO] 开始获取全局公共参数
+2026-01-09 10:36:53,467 [INFO] 正在请求登录接口获取token
+2026-01-09 10:36:53,467 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 10:36:55,679 [INFO] 接口调用成功: 200
+2026-01-09 10:36:57,766 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 10:36:57,766 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 10:36:57,766 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 10:36:57,766 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 10:37:00,514 [INFO] 接口调用成功: 200
+2026-01-09 10:37:02,556 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 10:37:05,184 [INFO] 接口调用成功: 200
+2026-01-09 10:37:07,250 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 10:37:07,250 [INFO] 成功获取到值: 2601081016404047512
+2026-01-09 10:37:07,277 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 10:37:07,277 [INFO] 成功获取到值: 412480620
+2026-01-09 10:37:07,299 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 10:37:07,300 [INFO] 成功获取到值: BQJA7
+2026-01-09 10:37:07,324 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 10:37:07,324 [INFO] 成功获取到值: 9650963
+2026-01-09 10:37:07,347 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 10:37:07,348 [INFO] 成功获取到值: 406943
+2026-01-09 10:37:07,374 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 10:37:07,375 [INFO] 成功获取到值: GAOHONGSHENG2
+2026-01-09 10:37:07,390 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 10:37:07,390 [INFO] 成功获取到值: 鲁昌渔64756
+2026-01-09 10:37:07,391 [INFO] 获取到的参数: targetId=2601081016404047512, mmsi=412480620, callSign=BQJA7, imo=9650963, terminal=406943, vesselName=GAOHONGSHENG2, shipName=鲁昌渔64756
+2026-01-09 10:37:09,430 [INFO] 全局公共参数获取成功
+2026-01-09 10:37:09,432 [INFO] 开始创建页面并执行登录
+2026-01-09 10:37:09,807 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 10:37:20,340 [INFO] 正在执行登录操作
+2026-01-09 10:37:21,547 [INFO] 登录成功
+2026-01-09 10:37:21,547 [INFO] 首次执行：点击【目标筛选】→【一键筛选】
+2026-01-09 10:37:29,419 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[小目标]
+2026-01-09 10:37:34,496 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[小目标]
+2026-01-09 10:37:34,504 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:37:34,504 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[高速目标]
+2026-01-09 10:37:38,636 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[高速目标]
+2026-01-09 10:37:38,639 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:37:38,640 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[低速目标]
+2026-01-09 10:37:42,802 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[低速目标]
+2026-01-09 10:37:42,834 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:37:42,836 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 10:37:46,976 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 10:37:46,984 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:37:46,985 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[渔船]
+2026-01-09 10:37:51,124 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[渔船]
+2026-01-09 10:37:51,131 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:37:51,133 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 10:37:55,282 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 10:37:55,297 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:37:55,298 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 10:37:59,441 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 10:37:59,467 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 10:37:59,468 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[北斗目标]
+2026-01-09 10:37:59,505 [ERROR] 搜索 北斗目标 时发生错误: Locator.click: Error: strict mode violation: locator("button:has-text('北斗目标')") resolved to 2 elements:
+    1) <button type="button" class="ant-btn default-group__inner-button ant-btn-primary">…</button> aka get_by_role("button", name="北斗目标")
+    2) <button title="北斗目标" type="button" class="ant-btn targetTypeFiltering__inner-button targetTypeFiltering__inner-button-check">…</button> aka get_by_title("北斗目标")
+
+Call log:
+  - waiting for locator("button:has-text('北斗目标')")
+
+2026-01-09 10:38:00,796 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 10:38:00,821 [INFO] 页面上下文已关闭
+2026-01-09 10:38:01,305 [INFO] 浏览器实例已关闭
+2026-01-09 14:02:12,025 [INFO] 开始启动浏览器实例
+2026-01-09 14:02:16,263 [INFO] 浏览器实例启动成功
+2026-01-09 14:02:18,361 [INFO] 开始获取全局公共参数
+2026-01-09 14:02:18,361 [INFO] 正在请求登录接口获取token
+2026-01-09 14:02:18,362 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 14:02:20,597 [INFO] 接口调用成功: 200
+2026-01-09 14:02:22,639 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 14:02:22,639 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 14:02:22,639 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 14:02:22,639 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 14:02:27,665 [INFO] 接口调用成功: 200
+2026-01-09 14:02:29,725 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 14:02:32,373 [INFO] 接口调用成功: 200
+2026-01-09 14:02:34,446 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 14:02:34,447 [INFO] 成功获取到值: 2601071944364037058
+2026-01-09 14:02:34,472 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 14:02:34,472 [INFO] 成功获取到值: 414668000
+2026-01-09 14:02:34,494 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 14:02:34,494 [INFO] 成功获取到值: BOEA4
+2026-01-09 14:02:34,516 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 14:02:34,516 [INFO] 成功获取到值: 9639593
+2026-01-09 14:02:34,534 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 14:02:34,534 [INFO] 成功获取到值: 851820
+2026-01-09 14:02:34,558 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 14:02:34,558 [INFO] 成功获取到值: DINGXIN103
+2026-01-09 14:02:34,577 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 14:02:34,578 [INFO] 成功获取到值: 鲁岚渔61349
+2026-01-09 14:02:34,578 [INFO] 获取到的参数: targetId=2601071944364037058, mmsi=414668000, callSign=BOEA4, imo=9639593, terminal=851820, vesselName=DINGXIN103, shipName=鲁岚渔61349
+2026-01-09 14:02:36,618 [INFO] 全局公共参数获取成功
+2026-01-09 14:02:36,620 [INFO] 开始创建页面并执行登录
+2026-01-09 14:02:37,063 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 14:02:44,483 [INFO] 正在执行登录操作
+2026-01-09 14:02:46,027 [INFO] 登录成功
+2026-01-09 14:02:46,027 [INFO] 首次执行：点击【目标筛选】→【一键筛选】
+2026-01-09 14:02:48,649 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[小目标]
+2026-01-09 14:02:52,884 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[小目标]
+2026-01-09 14:02:52,888 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:02:52,891 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[高速目标]
+2026-01-09 14:02:57,030 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[高速目标]
+2026-01-09 14:02:57,033 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:02:57,034 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[低速目标]
+2026-01-09 14:03:01,190 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[低速目标]
+2026-01-09 14:03:01,215 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:03:01,216 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 14:03:05,364 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 14:03:05,372 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:03:05,374 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[渔船]
+2026-01-09 14:03:09,501 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[渔船]
+2026-01-09 14:03:09,511 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:03:09,512 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 14:03:13,663 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 14:03:13,685 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:03:13,686 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 14:03:17,838 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 14:03:17,862 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:03:17,863 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[北斗目标]
+2026-01-09 14:03:17,908 [ERROR] 搜索 北斗目标 时发生错误: Locator.click: Error: strict mode violation: locator("button:has-text('北斗目标')") resolved to 2 elements:
+    1) <button type="button" class="ant-btn default-group__inner-button ant-btn-primary">…</button> aka get_by_role("button", name="北斗目标")
+    2) <button title="北斗目标" type="button" class="ant-btn targetTypeFiltering__inner-button targetTypeFiltering__inner-button-check">…</button> aka get_by_title("北斗目标")
+
+Call log:
+  - waiting for locator("button:has-text('北斗目标')")
+
+2026-01-09 14:03:19,106 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 14:03:19,131 [INFO] 页面上下文已关闭
+2026-01-09 14:03:19,615 [INFO] 浏览器实例已关闭
+2026-01-09 14:11:33,575 [INFO] 开始启动浏览器实例
+2026-01-09 14:11:34,329 [INFO] 浏览器实例启动成功
+2026-01-09 14:11:36,410 [INFO] 开始获取全局公共参数
+2026-01-09 14:11:36,410 [INFO] 正在请求登录接口获取token
+2026-01-09 14:11:36,411 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 14:11:38,626 [INFO] 接口调用成功: 200
+2026-01-09 14:11:40,666 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 14:11:40,666 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 14:11:40,666 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 14:11:40,667 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 14:11:43,934 [INFO] 接口调用成功: 200
+2026-01-09 14:11:45,981 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 14:11:48,606 [INFO] 接口调用成功: 200
+2026-01-09 14:11:50,677 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 14:11:50,677 [INFO] 成功获取到值: 2512312132274002425
+2026-01-09 14:11:50,699 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 14:11:50,700 [INFO] 成功获取到值: 413394980
+2026-01-09 14:11:50,723 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 14:11:50,723 [INFO] 成功获取到值: BPCP9
+2026-01-09 14:11:50,745 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 14:11:50,746 [INFO] 成功获取到值: 9729441
+2026-01-09 14:11:50,761 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 14:11:50,761 [INFO] 成功获取到值: 1000613
+2026-01-09 14:11:50,782 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 14:11:50,782 [INFO] 成功获取到值: KAN TAN 409
+2026-01-09 14:11:50,796 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 14:11:50,796 [INFO] 成功获取到值: 鲁烟开渔60151
+2026-01-09 14:11:50,796 [INFO] 获取到的参数: targetId=2512312132274002425, mmsi=413394980, callSign=BPCP9, imo=9729441, terminal=1000613, vesselName=KAN TAN 409, shipName=鲁烟开渔60151
+2026-01-09 14:11:52,844 [INFO] 全局公共参数获取成功
+2026-01-09 14:11:52,844 [INFO] 开始创建页面并执行登录
+2026-01-09 14:11:53,097 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 14:11:59,432 [INFO] 正在执行登录操作
+2026-01-09 14:12:00,699 [INFO] 登录成功
+2026-01-09 14:12:00,699 [INFO] 首次执行：点击【目标筛选】→【一键筛选】
+2026-01-09 14:12:03,176 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[小目标]
+2026-01-09 14:12:07,438 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[小目标]
+2026-01-09 14:12:07,442 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:12:07,443 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[高速目标]
+2026-01-09 14:12:11,543 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[高速目标]
+2026-01-09 14:12:11,545 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:12:11,546 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[低速目标]
+2026-01-09 14:12:15,741 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[低速目标]
+2026-01-09 14:12:15,770 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:12:15,771 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 14:12:19,927 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[非大陆籍]
+2026-01-09 14:12:19,932 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:12:19,933 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[渔船]
+2026-01-09 14:12:24,079 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[渔船]
+2026-01-09 14:12:24,089 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:12:24,090 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 14:12:28,227 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[纯雷达]
+2026-01-09 14:12:28,237 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:12:28,238 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 14:12:32,379 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[AIS目标]
+2026-01-09 14:12:32,410 [INFO] 已初始化一键筛选面板，跳过导航
+2026-01-09 14:12:32,411 [INFO] 开始执行测试用例: test_target_filter_by_oneClick[北斗目标]
+2026-01-09 14:12:36,568 [INFO] 测试用例执行完成: test_target_filter_by_oneClick[北斗目标]
+2026-01-09 14:12:37,612 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 14:12:37,642 [INFO] 页面上下文已关闭
+2026-01-09 14:12:38,112 [INFO] 浏览器实例已关闭
+2026-01-09 17:07:20,515 [INFO] 开始启动浏览器实例
+2026-01-09 17:07:21,342 [INFO] 浏览器实例启动成功
+2026-01-09 17:07:23,439 [INFO] 开始获取全局公共参数
+2026-01-09 17:07:23,439 [INFO] 正在请求登录接口获取token
+2026-01-09 17:07:23,439 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:07:25,770 [INFO] 接口调用成功: 200
+2026-01-09 17:07:27,813 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:07:27,814 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:07:27,814 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:07:27,815 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:07:33,036 [INFO] 接口调用成功: 200
+2026-01-09 17:07:35,075 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:07:37,862 [INFO] 接口调用成功: 200
+2026-01-09 17:07:39,923 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:07:39,923 [INFO] 成功获取到值: 2601060401524015555
+2026-01-09 17:07:39,940 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:07:39,940 [INFO] 成功获取到值: 352005898
+2026-01-09 17:07:39,956 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:07:39,956 [INFO] 成功获取到值: 3E9072
+2026-01-09 17:07:39,970 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:07:39,971 [INFO] 成功获取到值: 9258832
+2026-01-09 17:07:39,984 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:07:39,985 [INFO] 成功获取到值: 871824
+2026-01-09 17:07:39,999 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:07:40,000 [INFO] 成功获取到值: ROAMA 8
+2026-01-09 17:07:40,014 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:07:40,014 [INFO] 成功获取到值: 鲁昌渔养60071
+2026-01-09 17:07:40,015 [INFO] 获取到的参数: targetId=2601060401524015555, mmsi=352005898, callSign=3E9072, imo=9258832, terminal=871824, vesselName=ROAMA 8, shipName=鲁昌渔养60071
+2026-01-09 17:07:42,059 [INFO] 全局公共参数获取成功
+2026-01-09 17:07:42,059 [INFO] 开始创建页面并执行登录
+2026-01-09 17:07:42,380 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:07:48,194 [INFO] 正在执行登录操作
+2026-01-09 17:07:49,566 [INFO] 登录成功
+2026-01-09 17:07:51,685 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:07:52,855 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:07:52,879 [INFO] 页面上下文已关闭
+2026-01-09 17:07:53,338 [INFO] 浏览器实例已关闭
+2026-01-09 17:12:53,493 [INFO] 开始启动浏览器实例
+2026-01-09 17:12:54,180 [INFO] 浏览器实例启动成功
+2026-01-09 17:12:56,259 [INFO] 开始获取全局公共参数
+2026-01-09 17:12:56,259 [INFO] 正在请求登录接口获取token
+2026-01-09 17:12:56,259 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:12:58,764 [INFO] 接口调用成功: 200
+2026-01-09 17:13:00,813 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:13:00,813 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:13:00,813 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:13:00,814 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:13:04,125 [INFO] 接口调用成功: 200
+2026-01-09 17:13:06,170 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:13:09,504 [INFO] 接口调用成功: 200
+2026-01-09 17:13:11,562 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:13:11,562 [INFO] 成功获取到值: 2601090134174066106
+2026-01-09 17:13:11,578 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:13:11,578 [INFO] 成功获取到值: 412200990
+2026-01-09 17:13:11,595 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:13:11,595 [INFO] 成功获取到值: BQHZ3
+2026-01-09 17:13:11,612 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:13:11,612 [INFO] 成功获取到值: 9559327
+2026-01-09 17:13:11,627 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:13:11,627 [INFO] 成功获取到值: 876798
+2026-01-09 17:13:11,642 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:13:11,642 [INFO] 成功获取到值: HONG QIAO DA YU 7
+2026-01-09 17:13:11,654 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:13:11,654 [INFO] 成功获取到值: 鲁寿渔养68109
+2026-01-09 17:13:11,655 [INFO] 获取到的参数: targetId=2601090134174066106, mmsi=412200990, callSign=BQHZ3, imo=9559327, terminal=876798, vesselName=HONG QIAO DA YU 7, shipName=鲁寿渔养68109
+2026-01-09 17:13:13,692 [INFO] 全局公共参数获取成功
+2026-01-09 17:13:13,693 [INFO] 开始创建页面并执行登录
+2026-01-09 17:13:13,995 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:13:29,782 [INFO] 正在执行登录操作
+2026-01-09 17:13:31,116 [INFO] 登录成功
+2026-01-09 17:13:38,220 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:13:39,439 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:13:39,461 [INFO] 页面上下文已关闭
+2026-01-09 17:13:39,963 [INFO] 浏览器实例已关闭
+2026-01-09 17:15:49,277 [INFO] 开始启动浏览器实例
+2026-01-09 17:15:50,083 [INFO] 浏览器实例启动成功
+2026-01-09 17:15:52,162 [INFO] 开始获取全局公共参数
+2026-01-09 17:15:52,162 [INFO] 正在请求登录接口获取token
+2026-01-09 17:15:52,163 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:15:54,409 [INFO] 接口调用成功: 200
+2026-01-09 17:15:56,444 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:15:56,444 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:15:56,445 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:15:56,452 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:15:59,377 [INFO] 接口调用成功: 200
+2026-01-09 17:16:01,418 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:16:04,589 [INFO] 接口调用成功: 200
+2026-01-09 17:16:06,658 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:16:06,658 [INFO] 成功获取到值: 2512291908454086921
+2026-01-09 17:16:06,674 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:16:06,675 [INFO] 成功获取到值: 352986199
+2026-01-09 17:16:06,695 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:16:06,695 [INFO] 成功获取到值: 3E3940
+2026-01-09 17:16:06,711 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:16:06,711 [INFO] 成功获取到值: 9221607
+2026-01-09 17:16:06,727 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:16:06,727 [INFO] 成功获取到值: 850889
+2026-01-09 17:16:06,742 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:16:06,742 [INFO] 成功获取到值: XIANGMING
+2026-01-09 17:16:06,758 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:16:06,759 [INFO] 成功获取到值: 鲁寿渔61067
+2026-01-09 17:16:06,760 [INFO] 获取到的参数: targetId=2512291908454086921, mmsi=352986199, callSign=3E3940, imo=9221607, terminal=850889, vesselName=XIANGMING, shipName=鲁寿渔61067
+2026-01-09 17:16:08,801 [INFO] 全局公共参数获取成功
+2026-01-09 17:16:08,802 [INFO] 开始创建页面并执行登录
+2026-01-09 17:16:09,137 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:16:22,370 [INFO] 正在执行登录操作
+2026-01-09 17:16:23,597 [INFO] 登录成功
+2026-01-09 17:16:25,726 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:16:57,141 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:16:57,168 [INFO] 页面上下文已关闭
+2026-01-09 17:16:57,665 [INFO] 浏览器实例已关闭
+2026-01-09 17:17:43,165 [INFO] 开始启动浏览器实例
+2026-01-09 17:17:43,894 [INFO] 浏览器实例启动成功
+2026-01-09 17:17:45,975 [INFO] 开始获取全局公共参数
+2026-01-09 17:17:45,975 [INFO] 正在请求登录接口获取token
+2026-01-09 17:17:45,975 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:17:48,362 [INFO] 接口调用成功: 200
+2026-01-09 17:17:50,406 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:17:50,406 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:17:50,406 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:17:50,443 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:17:53,394 [INFO] 接口调用成功: 200
+2026-01-09 17:17:55,436 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:17:57,948 [INFO] 接口调用成功: 200
+2026-01-09 17:18:00,010 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:18:00,010 [INFO] 成功获取到值: 2512191759574057012
+2026-01-09 17:18:00,025 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:18:00,026 [INFO] 成功获取到值: 412301380
+2026-01-09 17:18:00,041 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:18:00,041 [INFO] 成功获取到值: BFNT
+2026-01-09 17:18:00,056 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:18:00,056 [INFO] 成功获取到值: 9291767
+2026-01-09 17:18:00,071 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:18:00,071 [INFO] 成功获取到值: 876627
+2026-01-09 17:18:00,086 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:18:00,087 [INFO] 成功获取到值: BIN HAI 268
+2026-01-09 17:18:00,100 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:18:00,101 [INFO] 成功获取到值: 鲁潍渔66016
+2026-01-09 17:18:00,101 [INFO] 获取到的参数: targetId=2512191759574057012, mmsi=412301380, callSign=BFNT, imo=9291767, terminal=876627, vesselName=BIN HAI 268, shipName=鲁潍渔66016
+2026-01-09 17:18:02,139 [INFO] 全局公共参数获取成功
+2026-01-09 17:18:02,140 [INFO] 开始创建页面并执行登录
+2026-01-09 17:18:02,447 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:18:18,688 [INFO] 正在执行登录操作
+2026-01-09 17:18:22,816 [INFO] 登录成功
+2026-01-09 17:18:24,998 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:18:26,229 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:18:26,256 [INFO] 页面上下文已关闭
+2026-01-09 17:18:26,702 [INFO] 浏览器实例已关闭
+2026-01-09 17:24:40,936 [INFO] 开始启动浏览器实例
+2026-01-09 17:24:41,796 [INFO] 浏览器实例启动成功
+2026-01-09 17:24:43,888 [INFO] 开始获取全局公共参数
+2026-01-09 17:24:43,888 [INFO] 正在请求登录接口获取token
+2026-01-09 17:24:43,888 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:24:46,142 [INFO] 接口调用成功: 200
+2026-01-09 17:24:48,187 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:24:48,188 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:24:48,188 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:24:48,189 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:24:50,826 [INFO] 接口调用成功: 200
+2026-01-09 17:24:52,874 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:24:55,455 [INFO] 接口调用成功: 200
+2026-01-09 17:24:57,515 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:24:57,516 [INFO] 成功获取到值: 2512191759574057012
+2026-01-09 17:24:57,530 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:24:57,530 [INFO] 成功获取到值: 412301380
+2026-01-09 17:24:57,546 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:24:57,546 [INFO] 成功获取到值: BFNT
+2026-01-09 17:24:57,560 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:24:57,561 [INFO] 成功获取到值: 9291767
+2026-01-09 17:24:57,576 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:24:57,576 [INFO] 成功获取到值: 912341
+2026-01-09 17:24:57,590 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:24:57,590 [INFO] 成功获取到值: BIN HAI 268
+2026-01-09 17:24:57,604 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:24:57,604 [INFO] 成功获取到值: 鲁海渔69300
+2026-01-09 17:24:57,605 [INFO] 获取到的参数: targetId=2512191759574057012, mmsi=412301380, callSign=BFNT, imo=9291767, terminal=912341, vesselName=BIN HAI 268, shipName=鲁海渔69300
+2026-01-09 17:24:59,648 [INFO] 全局公共参数获取成功
+2026-01-09 17:24:59,649 [INFO] 开始创建页面并执行登录
+2026-01-09 17:24:59,993 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:25:06,915 [INFO] 正在执行登录操作
+2026-01-09 17:25:08,810 [INFO] 登录成功
+2026-01-09 17:25:15,957 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:25:17,071 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:25:17,097 [INFO] 页面上下文已关闭
+2026-01-09 17:25:17,538 [INFO] 浏览器实例已关闭
+2026-01-09 17:27:13,990 [INFO] 开始启动浏览器实例
+2026-01-09 17:27:14,742 [INFO] 浏览器实例启动成功
+2026-01-09 17:27:16,823 [INFO] 开始获取全局公共参数
+2026-01-09 17:27:16,823 [INFO] 正在请求登录接口获取token
+2026-01-09 17:27:16,823 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:27:19,099 [INFO] 接口调用成功: 200
+2026-01-09 17:27:21,144 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:27:21,144 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:27:21,144 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:27:21,145 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:27:23,804 [INFO] 接口调用成功: 200
+2026-01-09 17:27:25,848 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:27:30,458 [INFO] 接口调用成功: 200
+2026-01-09 17:27:32,514 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:27:32,514 [INFO] 成功获取到值: 2512300703524081155
+2026-01-09 17:27:32,529 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:27:32,530 [INFO] 成功获取到值: 413270070
+2026-01-09 17:27:32,545 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:27:32,545 [INFO] 成功获取到值: BPMN9
+2026-01-09 17:27:32,559 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:27:32,559 [INFO] 成功获取到值: 9559327
+2026-01-09 17:27:32,573 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:27:32,574 [INFO] 成功获取到值: 871683
+2026-01-09 17:27:32,589 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:27:32,589 [INFO] 成功获取到值: CAOGANG5
+2026-01-09 17:27:32,602 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:27:32,602 [INFO] 成功获取到值: 鲁寿渔60926
+2026-01-09 17:27:32,603 [INFO] 获取到的参数: targetId=2512300703524081155, mmsi=413270070, callSign=BPMN9, imo=9559327, terminal=871683, vesselName=CAOGANG5, shipName=鲁寿渔60926
+2026-01-09 17:27:34,645 [INFO] 全局公共参数获取成功
+2026-01-09 17:27:34,647 [INFO] 开始创建页面并执行登录
+2026-01-09 17:27:34,931 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:27:47,293 [INFO] 正在执行登录操作
+2026-01-09 17:27:48,531 [INFO] 登录成功
+2026-01-09 17:27:50,697 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:27:51,846 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:27:51,885 [INFO] 页面上下文已关闭
+2026-01-09 17:27:52,343 [INFO] 浏览器实例已关闭
+2026-01-09 17:30:46,463 [INFO] 开始启动浏览器实例
+2026-01-09 17:30:47,144 [INFO] 浏览器实例启动成功
+2026-01-09 17:30:49,223 [INFO] 开始获取全局公共参数
+2026-01-09 17:30:49,223 [INFO] 正在请求登录接口获取token
+2026-01-09 17:30:49,223 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:30:51,513 [INFO] 接口调用成功: 200
+2026-01-09 17:30:53,555 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:30:53,555 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:30:53,556 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:30:53,584 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:30:57,955 [INFO] 接口调用成功: 200
+2026-01-09 17:30:59,997 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:31:02,768 [INFO] 接口调用成功: 200
+2026-01-09 17:31:04,823 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:31:04,823 [INFO] 成功获取到值: 2601081220194080613
+2026-01-09 17:31:04,838 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:31:04,839 [INFO] 成功获取到值: 412472930
+2026-01-09 17:31:04,854 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:31:04,854 [INFO] 成功获取到值: BYCQ
+2026-01-09 17:31:04,870 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:31:04,870 [INFO] 成功获取到值: 9559327
+2026-01-09 17:31:04,884 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:31:04,884 [INFO] 成功获取到值: 912371
+2026-01-09 17:31:04,897 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:31:04,898 [INFO] 成功获取到值: MIN SHENG 601
+2026-01-09 17:31:04,913 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:31:04,913 [INFO] 成功获取到值: 鲁海渔69586
+2026-01-09 17:31:04,913 [INFO] 获取到的参数: targetId=2601081220194080613, mmsi=412472930, callSign=BYCQ, imo=9559327, terminal=912371, vesselName=MIN SHENG 601, shipName=鲁海渔69586
+2026-01-09 17:31:06,959 [INFO] 全局公共参数获取成功
+2026-01-09 17:31:06,960 [INFO] 开始创建页面并执行登录
+2026-01-09 17:31:07,324 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:31:17,762 [INFO] 正在执行登录操作
+2026-01-09 17:31:18,997 [INFO] 登录成功
+2026-01-09 17:31:26,142 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:31:27,274 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:31:27,291 [INFO] 页面上下文已关闭
+2026-01-09 17:31:27,817 [INFO] 浏览器实例已关闭
+2026-01-09 17:33:25,356 [INFO] 开始启动浏览器实例
+2026-01-09 17:33:26,028 [INFO] 浏览器实例启动成功
+2026-01-09 17:33:28,110 [INFO] 开始获取全局公共参数
+2026-01-09 17:33:28,110 [INFO] 正在请求登录接口获取token
+2026-01-09 17:33:28,111 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:33:30,378 [INFO] 接口调用成功: 200
+2026-01-09 17:33:32,420 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:33:32,420 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:33:32,422 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:33:32,438 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:33:35,099 [INFO] 接口调用成功: 200
+2026-01-09 17:33:37,142 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:33:41,607 [INFO] 接口调用成功: 200
+2026-01-09 17:33:43,668 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:33:43,668 [INFO] 成功获取到值: 2601030649394005005
+2026-01-09 17:33:43,687 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:33:43,687 [INFO] 成功获取到值: 413537550
+2026-01-09 17:33:43,706 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:33:43,707 [INFO] 成功获取到值: BPHM4
+2026-01-09 17:33:43,724 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:33:43,724 [INFO] 成功获取到值: 9559327
+2026-01-09 17:33:43,739 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:33:43,739 [INFO] 成功获取到值: 851862
+2026-01-09 17:33:43,754 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:33:43,755 [INFO] 成功获取到值: LI HUA 28
+2026-01-09 17:33:43,768 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:33:43,768 [INFO] 成功获取到值: 鲁岚渔61718
+2026-01-09 17:33:43,769 [INFO] 获取到的参数: targetId=2601030649394005005, mmsi=413537550, callSign=BPHM4, imo=9559327, terminal=851862, vesselName=LI HUA 28, shipName=鲁岚渔61718
+2026-01-09 17:33:45,811 [INFO] 全局公共参数获取成功
+2026-01-09 17:33:45,811 [INFO] 开始创建页面并执行登录
+2026-01-09 17:33:46,140 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:33:56,925 [INFO] 正在执行登录操作
+2026-01-09 17:33:58,689 [INFO] 登录成功
+2026-01-09 17:34:00,866 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:34:01,939 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:34:01,971 [INFO] 页面上下文已关闭
+2026-01-09 17:34:02,375 [INFO] 浏览器实例已关闭
+2026-01-09 17:34:10,215 [INFO] 开始启动浏览器实例
+2026-01-09 17:34:10,885 [INFO] 浏览器实例启动成功
+2026-01-09 17:34:12,969 [INFO] 开始获取全局公共参数
+2026-01-09 17:34:12,969 [INFO] 正在请求登录接口获取token
+2026-01-09 17:34:12,969 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:34:15,210 [INFO] 接口调用成功: 200
+2026-01-09 17:34:17,249 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:34:17,249 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:34:17,249 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:34:17,250 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:34:19,960 [INFO] 接口调用成功: 200
+2026-01-09 17:34:22,002 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:34:26,604 [INFO] 接口调用成功: 200
+2026-01-09 17:34:28,667 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:34:28,668 [INFO] 成功获取到值: 2512070612504031272
+2026-01-09 17:34:28,685 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:34:28,685 [INFO] 成功获取到值: 413358980
+2026-01-09 17:34:28,704 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:34:28,704 [INFO] 成功获取到值: BPFR8
+2026-01-09 17:34:28,719 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:34:28,719 [INFO] 成功获取到值: 9559327
+2026-01-09 17:34:28,733 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:34:28,733 [INFO] 成功获取到值: 1488891
+2026-01-09 17:34:28,749 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:34:28,750 [INFO] 成功获取到值: HUA XI 1
+2026-01-09 17:34:28,763 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:34:28,764 [INFO] 成功获取到值: 鲁荣渔58849
+2026-01-09 17:34:28,765 [INFO] 获取到的参数: targetId=2512070612504031272, mmsi=413358980, callSign=BPFR8, imo=9559327, terminal=1488891, vesselName=HUA XI 1, shipName=鲁荣渔58849
+2026-01-09 17:34:30,806 [INFO] 全局公共参数获取成功
+2026-01-09 17:34:30,806 [INFO] 开始创建页面并执行登录
+2026-01-09 17:34:31,106 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:34:40,297 [INFO] 正在执行登录操作
+2026-01-09 17:34:41,545 [INFO] 登录成功
+2026-01-09 17:34:49,147 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:34:50,315 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:34:50,344 [INFO] 页面上下文已关闭
+2026-01-09 17:34:50,806 [INFO] 浏览器实例已关闭
+2026-01-09 17:37:03,097 [INFO] 开始启动浏览器实例
+2026-01-09 17:37:03,894 [INFO] 浏览器实例启动成功
+2026-01-09 17:37:05,974 [INFO] 开始获取全局公共参数
+2026-01-09 17:37:05,974 [INFO] 正在请求登录接口获取token
+2026-01-09 17:37:05,974 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:37:08,228 [INFO] 接口调用成功: 200
+2026-01-09 17:37:10,272 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:37:10,273 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:37:10,273 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:37:10,310 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:37:15,013 [INFO] 接口调用成功: 200
+2026-01-09 17:37:17,058 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:37:19,710 [INFO] 接口调用成功: 200
+2026-01-09 17:37:21,770 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:37:21,770 [INFO] 成功获取到值: 2601062101054063413
+2026-01-09 17:37:21,790 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:37:21,790 [INFO] 成功获取到值: 413330090
+2026-01-09 17:37:21,807 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:37:21,807 [INFO] 成功获取到值: BBZS5
+2026-01-09 17:37:21,825 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:37:21,825 [INFO] 成功获取到值: 9805817
+2026-01-09 17:37:21,840 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:37:21,840 [INFO] 成功获取到值: 850676
+2026-01-09 17:37:21,856 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:37:21,856 [INFO] 成功获取到值: WEI GANG TUO35
+2026-01-09 17:37:21,869 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:37:21,869 [INFO] 成功获取到值: 鲁岚渔61567
+2026-01-09 17:37:21,871 [INFO] 获取到的参数: targetId=2601062101054063413, mmsi=413330090, callSign=BBZS5, imo=9805817, terminal=850676, vesselName=WEI GANG TUO35, shipName=鲁岚渔61567
+2026-01-09 17:37:23,911 [INFO] 全局公共参数获取成功
+2026-01-09 17:37:23,912 [INFO] 开始创建页面并执行登录
+2026-01-09 17:37:24,205 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:37:37,194 [INFO] 正在执行登录操作
+2026-01-09 17:37:38,433 [INFO] 登录成功
+2026-01-09 17:37:40,561 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:37:41,702 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:37:41,730 [INFO] 页面上下文已关闭
+2026-01-09 17:37:42,194 [INFO] 浏览器实例已关闭
+2026-01-09 17:39:10,210 [INFO] 开始启动浏览器实例
+2026-01-09 17:39:10,852 [INFO] 浏览器实例启动成功
+2026-01-09 17:39:12,932 [INFO] 开始获取全局公共参数
+2026-01-09 17:39:12,932 [INFO] 正在请求登录接口获取token
+2026-01-09 17:39:12,932 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:39:15,188 [INFO] 接口调用成功: 200
+2026-01-09 17:39:17,235 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:39:17,236 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:39:17,236 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:39:17,272 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:39:20,630 [INFO] 接口调用成功: 200
+2026-01-09 17:39:22,666 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:39:25,786 [INFO] 接口调用成功: 200
+2026-01-09 17:39:27,852 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:39:27,852 [INFO] 成功获取到值: 2512191759574057012
+2026-01-09 17:39:27,875 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:39:27,875 [INFO] 成功获取到值: 412301380
+2026-01-09 17:39:27,892 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:39:27,892 [INFO] 成功获取到值: BFNT
+2026-01-09 17:39:27,911 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:39:27,911 [INFO] 成功获取到值: 9291767
+2026-01-09 17:39:27,927 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:39:27,927 [INFO] 成功获取到值: 1488931
+2026-01-09 17:39:27,943 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:39:27,943 [INFO] 成功获取到值: BIN HAI 268
+2026-01-09 17:39:27,965 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:39:27,965 [INFO] 成功获取到值: 鲁荣渔51984
+2026-01-09 17:39:27,967 [INFO] 获取到的参数: targetId=2512191759574057012, mmsi=412301380, callSign=BFNT, imo=9291767, terminal=1488931, vesselName=BIN HAI 268, shipName=鲁荣渔51984
+2026-01-09 17:39:30,017 [INFO] 全局公共参数获取成功
+2026-01-09 17:39:30,017 [INFO] 开始创建页面并执行登录
+2026-01-09 17:39:30,441 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:39:40,135 [INFO] 正在执行登录操作
+2026-01-09 17:39:41,837 [INFO] 登录成功
+2026-01-09 17:39:48,911 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:39:50,473 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:39:50,521 [INFO] 页面上下文已关闭
+2026-01-09 17:39:51,056 [INFO] 浏览器实例已关闭
+2026-01-09 17:47:27,639 [INFO] 开始启动浏览器实例
+2026-01-09 17:47:28,360 [INFO] 浏览器实例启动成功
+2026-01-09 17:47:30,452 [INFO] 开始获取全局公共参数
+2026-01-09 17:47:30,452 [INFO] 正在请求登录接口获取token
+2026-01-09 17:47:30,452 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:47:32,711 [INFO] 接口调用成功: 200
+2026-01-09 17:47:34,749 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:47:34,750 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:47:34,750 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:47:34,750 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:47:37,693 [INFO] 接口调用成功: 200
+2026-01-09 17:47:39,734 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:47:42,455 [INFO] 接口调用成功: 200
+2026-01-09 17:47:44,522 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:47:44,522 [INFO] 成功获取到值: 2601030649394005005
+2026-01-09 17:47:44,540 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:47:44,540 [INFO] 成功获取到值: 413537550
+2026-01-09 17:47:44,561 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:47:44,561 [INFO] 成功获取到值: BPHM4
+2026-01-09 17:47:44,578 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:47:44,579 [INFO] 成功获取到值: 9559327
+2026-01-09 17:47:44,593 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:47:44,593 [INFO] 成功获取到值: 912261
+2026-01-09 17:47:44,609 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:47:44,610 [INFO] 成功获取到值: LI HUA 28
+2026-01-09 17:47:44,626 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:47:44,626 [INFO] 成功获取到值: 鲁海渔69500
+2026-01-09 17:47:44,627 [INFO] 获取到的参数: targetId=2601030649394005005, mmsi=413537550, callSign=BPHM4, imo=9559327, terminal=912261, vesselName=LI HUA 28, shipName=鲁海渔69500
+2026-01-09 17:47:46,690 [INFO] 全局公共参数获取成功
+2026-01-09 17:47:46,691 [INFO] 开始创建页面并执行登录
+2026-01-09 17:47:47,008 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:47:53,370 [INFO] 正在执行登录操作
+2026-01-09 17:47:57,787 [INFO] 登录成功
+2026-01-09 17:47:59,959 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:48:01,202 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:48:01,238 [INFO] 页面上下文已关闭
+2026-01-09 17:48:01,699 [INFO] 浏览器实例已关闭
+2026-01-09 17:49:25,371 [INFO] 开始启动浏览器实例
+2026-01-09 17:49:26,137 [INFO] 浏览器实例启动成功
+2026-01-09 17:49:28,212 [INFO] 开始获取全局公共参数
+2026-01-09 17:49:28,212 [INFO] 正在请求登录接口获取token
+2026-01-09 17:49:28,212 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:49:30,445 [INFO] 接口调用成功: 200
+2026-01-09 17:49:32,489 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:49:32,489 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:49:32,490 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:49:32,490 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:49:37,324 [INFO] 接口调用成功: 200
+2026-01-09 17:49:39,363 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:49:42,004 [INFO] 接口调用成功: 200
+2026-01-09 17:49:44,067 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:49:44,068 [INFO] 成功获取到值: 2601030649394005005
+2026-01-09 17:49:44,085 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:49:44,086 [INFO] 成功获取到值: 413537550
+2026-01-09 17:49:44,104 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:49:44,104 [INFO] 成功获取到值: BPHM4
+2026-01-09 17:49:44,120 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:49:44,120 [INFO] 成功获取到值: 9258832
+2026-01-09 17:49:44,136 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:49:44,136 [INFO] 成功获取到值: 880039
+2026-01-09 17:49:44,150 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:49:44,151 [INFO] 成功获取到值: LI HUA 28
+2026-01-09 17:49:44,162 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:49:44,163 [INFO] 成功获取到值: 鲁荣渔56867
+2026-01-09 17:49:44,163 [INFO] 获取到的参数: targetId=2601030649394005005, mmsi=413537550, callSign=BPHM4, imo=9258832, terminal=880039, vesselName=LI HUA 28, shipName=鲁荣渔56867
+2026-01-09 17:49:46,213 [INFO] 全局公共参数获取成功
+2026-01-09 17:49:46,214 [INFO] 开始创建页面并执行登录
+2026-01-09 17:49:46,530 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:50:02,831 [INFO] 正在执行登录操作
+2026-01-09 17:50:04,126 [INFO] 登录成功
+2026-01-09 17:50:06,278 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:50:07,465 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:50:07,490 [INFO] 页面上下文已关闭
+2026-01-09 17:50:07,947 [INFO] 浏览器实例已关闭
+2026-01-09 17:51:01,060 [INFO] 开始启动浏览器实例
+2026-01-09 17:51:01,802 [INFO] 浏览器实例启动成功
+2026-01-09 17:51:03,884 [INFO] 开始获取全局公共参数
+2026-01-09 17:51:03,884 [INFO] 正在请求登录接口获取token
+2026-01-09 17:51:03,884 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:51:06,187 [INFO] 接口调用成功: 200
+2026-01-09 17:51:08,230 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:51:08,230 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:51:08,230 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:51:08,244 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:51:11,244 [INFO] 接口调用成功: 200
+2026-01-09 17:51:13,282 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:51:17,700 [INFO] 接口调用成功: 200
+2026-01-09 17:51:19,767 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:51:19,767 [INFO] 成功获取到值: 2601062138274071031
+2026-01-09 17:51:19,786 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:51:19,786 [INFO] 成功获取到值: 414181000
+2026-01-09 17:51:19,805 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:51:19,805 [INFO] 成功获取到值: BPGC5
+2026-01-09 17:51:19,821 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:51:19,822 [INFO] 成功获取到值: 9647772
+2026-01-09 17:51:19,837 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:51:19,838 [INFO] 成功获取到值: 876770
+2026-01-09 17:51:19,853 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:51:19,854 [INFO] 成功获取到值: XIN HAI TONG 5
+2026-01-09 17:51:19,867 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:51:19,867 [INFO] 成功获取到值: 鲁寿渔65868
+2026-01-09 17:51:19,868 [INFO] 获取到的参数: targetId=2601062138274071031, mmsi=414181000, callSign=BPGC5, imo=9647772, terminal=876770, vesselName=XIN HAI TONG 5, shipName=鲁寿渔65868
+2026-01-09 17:51:21,908 [INFO] 全局公共参数获取成功
+2026-01-09 17:51:21,909 [INFO] 开始创建页面并执行登录
+2026-01-09 17:51:22,252 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:51:31,463 [INFO] 正在执行登录操作
+2026-01-09 17:51:32,811 [INFO] 登录成功
+2026-01-09 17:51:34,987 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:51:36,353 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:51:36,377 [INFO] 页面上下文已关闭
+2026-01-09 17:51:36,814 [INFO] 浏览器实例已关闭
+2026-01-09 17:52:02,180 [INFO] 开始启动浏览器实例
+2026-01-09 17:52:02,932 [INFO] 浏览器实例启动成功
+2026-01-09 17:52:05,010 [INFO] 开始获取全局公共参数
+2026-01-09 17:52:05,010 [INFO] 正在请求登录接口获取token
+2026-01-09 17:52:05,010 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:52:07,392 [INFO] 接口调用成功: 200
+2026-01-09 17:52:09,446 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:52:09,446 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:52:09,446 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:52:09,447 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:52:13,896 [INFO] 接口调用成功: 200
+2026-01-09 17:52:15,939 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:52:18,868 [INFO] 接口调用成功: 200
+2026-01-09 17:52:20,933 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:52:20,933 [INFO] 成功获取到值: 2601032116264043589
+2026-01-09 17:52:20,955 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:52:20,955 [INFO] 成功获取到值: 412208070
+2026-01-09 17:52:20,974 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:52:20,974 [INFO] 成功获取到值: C6QO7
+2026-01-09 17:52:20,993 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:52:20,993 [INFO] 成功获取到值: 9899404
+2026-01-09 17:52:21,007 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:52:21,007 [INFO] 成功获取到值: 876410
+2026-01-09 17:52:21,024 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:52:21,025 [INFO] 成功获取到值: CHANG AN YOU 1
+2026-01-09 17:52:21,038 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:52:21,038 [INFO] 成功获取到值: 鲁寿渔65869
+2026-01-09 17:52:21,039 [INFO] 获取到的参数: targetId=2601032116264043589, mmsi=412208070, callSign=C6QO7, imo=9899404, terminal=876410, vesselName=CHANG AN YOU 1, shipName=鲁寿渔65869
+2026-01-09 17:52:23,081 [INFO] 全局公共参数获取成功
+2026-01-09 17:52:23,082 [INFO] 开始创建页面并执行登录
+2026-01-09 17:52:23,427 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:52:37,171 [INFO] 正在执行登录操作
+2026-01-09 17:52:41,339 [INFO] 登录成功
+2026-01-09 17:52:43,498 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:53:15,878 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:53:15,901 [INFO] 页面上下文已关闭
+2026-01-09 17:53:16,359 [INFO] 浏览器实例已关闭
+2026-01-09 17:53:34,777 [INFO] 开始启动浏览器实例
+2026-01-09 17:53:35,479 [INFO] 浏览器实例启动成功
+2026-01-09 17:53:37,560 [INFO] 开始获取全局公共参数
+2026-01-09 17:53:37,560 [INFO] 正在请求登录接口获取token
+2026-01-09 17:53:37,560 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:53:39,875 [INFO] 接口调用成功: 200
+2026-01-09 17:53:41,937 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:53:41,938 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:53:41,938 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:53:41,974 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:53:46,174 [INFO] 接口调用成功: 200
+2026-01-09 17:53:48,222 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:53:51,047 [INFO] 接口调用成功: 200
+2026-01-09 17:53:53,112 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:53:53,112 [INFO] 成功获取到值: 2601040604424093480
+2026-01-09 17:53:53,130 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:53:53,130 [INFO] 成功获取到值: 413534220
+2026-01-09 17:53:53,147 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:53:53,147 [INFO] 成功获取到值: (2D5489
+2026-01-09 17:53:53,166 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:53:53,167 [INFO] 成功获取到值: 9559327
+2026-01-09 17:53:53,181 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:53:53,181 [INFO] 成功获取到值: 851862
+2026-01-09 17:53:53,197 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:53:53,197 [INFO] 成功获取到值: PENGJU66
+2026-01-09 17:53:53,209 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:53:53,210 [INFO] 成功获取到值: 鲁岚渔61718
+2026-01-09 17:53:53,210 [INFO] 获取到的参数: targetId=2601040604424093480, mmsi=413534220, callSign=(2D5489, imo=9559327, terminal=851862, vesselName=PENGJU66, shipName=鲁岚渔61718
+2026-01-09 17:53:55,254 [INFO] 全局公共参数获取成功
+2026-01-09 17:53:55,256 [INFO] 开始创建页面并执行登录
+2026-01-09 17:53:55,561 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:54:12,146 [INFO] 正在执行登录操作
+2026-01-09 17:54:13,384 [INFO] 登录成功
+2026-01-09 17:54:20,980 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:54:22,009 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 17:54:22,053 [INFO] 页面上下文已关闭
+2026-01-09 17:54:22,521 [INFO] 浏览器实例已关闭
+2026-01-09 17:58:27,540 [INFO] 开始启动浏览器实例
+2026-01-09 17:58:28,307 [INFO] 浏览器实例启动成功
+2026-01-09 17:58:30,398 [INFO] 开始获取全局公共参数
+2026-01-09 17:58:30,399 [INFO] 正在请求登录接口获取token
+2026-01-09 17:58:30,399 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 17:58:32,652 [INFO] 接口调用成功: 200
+2026-01-09 17:58:34,694 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 17:58:34,694 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 17:58:34,695 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 17:58:34,696 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:58:37,980 [INFO] 接口调用成功: 200
+2026-01-09 17:58:40,030 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 17:58:43,749 [INFO] 接口调用成功: 200
+2026-01-09 17:58:45,812 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 17:58:45,812 [INFO] 成功获取到值: 2601030649394005005
+2026-01-09 17:58:45,831 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 17:58:45,832 [INFO] 成功获取到值: 413537550
+2026-01-09 17:58:45,849 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 17:58:45,849 [INFO] 成功获取到值: BPHM4
+2026-01-09 17:58:45,870 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 17:58:45,870 [INFO] 成功获取到值: 9559327
+2026-01-09 17:58:45,886 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 17:58:45,886 [INFO] 成功获取到值: 869938
+2026-01-09 17:58:45,902 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 17:58:45,902 [INFO] 成功获取到值: LI HUA 28
+2026-01-09 17:58:45,916 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 17:58:45,916 [INFO] 成功获取到值: 鲁威渔62362
+2026-01-09 17:58:45,917 [INFO] 获取到的参数: targetId=2601030649394005005, mmsi=413537550, callSign=BPHM4, imo=9559327, terminal=869938, vesselName=LI HUA 28, shipName=鲁威渔62362
+2026-01-09 17:58:47,957 [INFO] 全局公共参数获取成功
+2026-01-09 17:58:47,957 [INFO] 开始创建页面并执行登录
+2026-01-09 17:58:48,258 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 17:59:14,962 [INFO] 正在执行登录操作
+2026-01-09 17:59:19,220 [INFO] 登录成功
+2026-01-09 17:59:21,376 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 17:59:21,694 [INFO] 正在点击目标类型按钮: 雷 达
+2026-01-09 17:59:21,764 [INFO] 正在点击目标类型按钮: AIS_A
+2026-01-09 17:59:21,872 [INFO] 正在点击目标类型按钮: AIS_B
+2026-01-09 17:59:21,952 [INFO] 正在点击目标类型按钮: 雷达AIS
+2026-01-09 17:59:52,162 [INFO] 正在点击目标类型按钮: AIS_A
+2026-01-09 17:59:52,244 [INFO] 正在点击目标类型按钮: 其他
+2026-01-09 18:00:23,261 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 18:00:23,288 [INFO] 页面上下文已关闭
+2026-01-09 18:00:23,749 [INFO] 浏览器实例已关闭
+2026-01-09 18:03:43,677 [INFO] 开始启动浏览器实例
+2026-01-09 18:03:44,412 [INFO] 浏览器实例启动成功
+2026-01-09 18:03:46,493 [INFO] 开始获取全局公共参数
+2026-01-09 18:03:46,493 [INFO] 正在请求登录接口获取token
+2026-01-09 18:03:46,493 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 18:03:48,732 [INFO] 接口调用成功: 200
+2026-01-09 18:03:50,777 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 18:03:50,778 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 18:03:50,778 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 18:03:50,805 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:03:55,104 [INFO] 接口调用成功: 200
+2026-01-09 18:03:57,156 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:03:59,809 [INFO] 接口调用成功: 200
+2026-01-09 18:04:01,873 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 18:04:01,873 [INFO] 成功获取到值: 2601041845134031836
+2026-01-09 18:04:01,894 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 18:04:01,894 [INFO] 成功获取到值: 412011250
+2026-01-09 18:04:01,917 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 18:04:01,918 [INFO] 成功获取到值: BOSD9
+2026-01-09 18:04:01,938 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 18:04:01,938 [INFO] 成功获取到值: 9222510
+2026-01-09 18:04:01,953 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 18:04:01,953 [INFO] 成功获取到值: 876324
+2026-01-09 18:04:01,970 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 18:04:01,970 [INFO] 成功获取到值: QINGANG16
+2026-01-09 18:04:01,987 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 18:04:01,987 [INFO] 成功获取到值: 鲁寿渔60157
+2026-01-09 18:04:01,988 [INFO] 获取到的参数: targetId=2601041845134031836, mmsi=412011250, callSign=BOSD9, imo=9222510, terminal=876324, vesselName=QINGANG16, shipName=鲁寿渔60157
+2026-01-09 18:04:04,032 [INFO] 全局公共参数获取成功
+2026-01-09 18:04:04,034 [INFO] 开始创建页面并执行登录
+2026-01-09 18:04:04,363 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 18:04:17,226 [INFO] 正在执行登录操作
+2026-01-09 18:04:18,611 [INFO] 登录成功
+2026-01-09 18:04:20,749 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 18:04:21,113 [INFO] 正在点击目标类型按钮: 雷 达
+2026-01-09 18:04:23,358 [INFO] 正在点击目标类型按钮: AIS_A
+2026-01-09 18:04:25,499 [INFO] 正在点击目标类型按钮: AIS_B
+2026-01-09 18:04:27,629 [INFO] 正在点击目标类型按钮: 雷达AIS
+2026-01-09 18:04:57,928 [INFO] 正在点击目标类型按钮: AIS_A
+2026-01-09 18:05:00,159 [INFO] 正在点击目标类型按钮: 其他
+2026-01-09 18:05:31,520 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 18:05:31,542 [INFO] 页面上下文已关闭
+2026-01-09 18:05:32,112 [INFO] 浏览器实例已关闭
+2026-01-09 18:07:12,118 [INFO] 开始启动浏览器实例
+2026-01-09 18:07:12,852 [INFO] 浏览器实例启动成功
+2026-01-09 18:07:14,943 [INFO] 开始获取全局公共参数
+2026-01-09 18:07:14,943 [INFO] 正在请求登录接口获取token
+2026-01-09 18:07:14,943 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 18:07:17,325 [INFO] 接口调用成功: 200
+2026-01-09 18:07:19,371 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 18:07:19,371 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 18:07:19,371 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 18:07:19,406 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:07:22,170 [INFO] 接口调用成功: 200
+2026-01-09 18:07:24,210 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:07:26,778 [INFO] 接口调用成功: 200
+2026-01-09 18:07:28,846 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 18:07:28,847 [INFO] 成功获取到值: 2512311843164067827
+2026-01-09 18:07:28,864 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 18:07:28,864 [INFO] 成功获取到值: 413272030
+2026-01-09 18:07:28,882 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 18:07:28,882 [INFO] 成功获取到值: BOSA4
+2026-01-09 18:07:28,902 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 18:07:28,903 [INFO] 成功获取到值: 9324667
+2026-01-09 18:07:28,919 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 18:07:28,919 [INFO] 成功获取到值: 970242
+2026-01-09 18:07:28,934 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 18:07:28,935 [INFO] 成功获取到值: QIN GANG 22
+2026-01-09 18:07:28,948 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 18:07:28,949 [INFO] 成功获取到值: 鲁荣渔59105
+2026-01-09 18:07:28,949 [INFO] 获取到的参数: targetId=2512311843164067827, mmsi=413272030, callSign=BOSA4, imo=9324667, terminal=970242, vesselName=QIN GANG 22, shipName=鲁荣渔59105
+2026-01-09 18:07:30,992 [INFO] 全局公共参数获取成功
+2026-01-09 18:07:30,993 [INFO] 开始创建页面并执行登录
+2026-01-09 18:07:31,304 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 18:07:40,760 [INFO] 正在执行登录操作
+2026-01-09 18:07:42,787 [INFO] 登录成功
+2026-01-09 18:07:49,935 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 18:08:20,508 [INFO] 正在点击目标类型按钮: 雷 达
+2026-01-09 18:08:22,671 [INFO] 正在点击目标类型按钮: AIS_A
+2026-01-09 18:08:24,836 [INFO] 正在点击目标类型按钮: AIS_B
+2026-01-09 18:08:26,984 [INFO] 正在点击目标类型按钮: 雷达AIS_A
+2026-01-09 18:08:29,117 [INFO] 正在点击目标类型按钮: 雷达AIS_B
+2026-01-09 18:08:31,265 [INFO] 正在点击目标类型按钮: 其 他
+2026-01-09 18:08:34,775 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 18:08:34,808 [INFO] 页面上下文已关闭
+2026-01-09 18:08:35,328 [INFO] 浏览器实例已关闭
+2026-01-09 18:22:07,683 [INFO] 开始启动浏览器实例
+2026-01-09 18:22:08,470 [INFO] 浏览器实例启动成功
+2026-01-09 18:22:10,556 [INFO] 开始获取全局公共参数
+2026-01-09 18:22:10,556 [INFO] 正在请求登录接口获取token
+2026-01-09 18:22:10,556 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 18:22:12,816 [INFO] 接口调用成功: 200
+2026-01-09 18:22:14,858 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 18:22:14,859 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 18:22:14,859 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 18:22:14,877 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:22:17,723 [INFO] 接口调用成功: 200
+2026-01-09 18:22:19,759 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:22:22,418 [INFO] 接口调用成功: 200
+2026-01-09 18:22:24,482 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 18:22:24,483 [INFO] 成功获取到值: 2512221029594038869
+2026-01-09 18:22:24,502 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 18:22:24,503 [INFO] 成功获取到值: 799210161
+2026-01-09 18:22:24,527 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 18:22:24,527 [INFO] 成功获取到值: 0C9S3
+2026-01-09 18:22:24,545 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 18:22:24,546 [INFO] 成功获取到值: 9899404
+2026-01-09 18:22:24,560 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 18:22:24,560 [INFO] 成功获取到值: 855301
+2026-01-09 18:22:24,577 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 18:22:24,577 [INFO] 成功获取到值: PT08
+2026-01-09 18:22:24,590 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 18:22:24,590 [INFO] 成功获取到值: 鲁威渔62098
+2026-01-09 18:22:24,591 [INFO] 获取到的参数: targetId=2512221029594038869, mmsi=799210161, callSign=0C9S3, imo=9899404, terminal=855301, vesselName=PT08, shipName=鲁威渔62098
+2026-01-09 18:22:26,633 [INFO] 全局公共参数获取成功
+2026-01-09 18:22:26,635 [INFO] 开始创建页面并执行登录
+2026-01-09 18:22:26,944 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 18:22:43,234 [INFO] 正在执行登录操作
+2026-01-09 18:22:44,460 [INFO] 登录成功
+2026-01-09 18:22:46,620 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 18:22:47,151 [INFO] 正在点击目标类型按钮: 雷 达
+2026-01-09 18:22:49,339 [INFO] 正在点击目标类型按钮: AIS_A
+2026-01-09 18:22:51,487 [INFO] 正在点击目标类型按钮: AIS_B
+2026-01-09 18:22:53,639 [INFO] 正在点击目标类型按钮: 雷达AIS_A
+2026-01-09 18:22:55,784 [INFO] 正在点击目标类型按钮: 雷达AIS_B
+2026-01-09 18:22:58,019 [INFO] 正在点击目标类型按钮: 其 他
+2026-01-09 18:23:01,049 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 18:23:01,079 [INFO] 页面上下文已关闭
+2026-01-09 18:23:01,545 [INFO] 浏览器实例已关闭
+2026-01-09 18:30:54,208 [INFO] 开始启动浏览器实例
+2026-01-09 18:30:54,910 [INFO] 浏览器实例启动成功
+2026-01-09 18:30:56,988 [INFO] 开始获取全局公共参数
+2026-01-09 18:30:56,988 [INFO] 正在请求登录接口获取token
+2026-01-09 18:30:56,988 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 18:30:59,236 [INFO] 接口调用成功: 200
+2026-01-09 18:31:01,282 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 18:31:01,282 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 18:31:01,282 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 18:31:01,283 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:31:04,857 [INFO] 接口调用成功: 200
+2026-01-09 18:31:06,905 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:31:10,483 [INFO] 接口调用成功: 200
+2026-01-09 18:31:12,557 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 18:31:12,557 [INFO] 成功获取到值: 2601030649394005005
+2026-01-09 18:31:12,577 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 18:31:12,577 [INFO] 成功获取到值: 413537550
+2026-01-09 18:31:12,599 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 18:31:12,599 [INFO] 成功获取到值: BPHM4
+2026-01-09 18:31:12,620 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 18:31:12,620 [INFO] 成功获取到值: 9258832
+2026-01-09 18:31:12,634 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 18:31:12,635 [INFO] 成功获取到值: 871817
+2026-01-09 18:31:12,653 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 18:31:12,653 [INFO] 成功获取到值: LI HUA 28
+2026-01-09 18:31:12,666 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 18:31:12,667 [INFO] 成功获取到值: 鲁昌渔养60007
+2026-01-09 18:31:12,667 [INFO] 获取到的参数: targetId=2601030649394005005, mmsi=413537550, callSign=BPHM4, imo=9258832, terminal=871817, vesselName=LI HUA 28, shipName=鲁昌渔养60007
+2026-01-09 18:31:14,712 [INFO] 全局公共参数获取成功
+2026-01-09 18:31:14,713 [INFO] 开始创建页面并执行登录
+2026-01-09 18:31:15,010 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 18:31:24,729 [INFO] 正在执行登录操作
+2026-01-09 18:31:25,953 [INFO] 登录成功
+2026-01-09 18:31:33,567 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 18:32:04,047 [INFO] 正在点击目标类型按钮: 雷 达
+2026-01-09 18:32:06,203 [INFO] 正在点击目标类型按钮: AIS_A
+2026-01-09 18:32:08,355 [INFO] 正在点击目标类型按钮: AIS_B
+2026-01-09 18:32:10,503 [INFO] 正在点击目标类型按钮: 雷达AIS_A
+2026-01-09 18:32:12,672 [INFO] 正在点击目标类型按钮: 雷达AIS_B
+2026-01-09 18:32:14,818 [INFO] 正在点击目标类型按钮: 其 他
+2026-01-09 18:32:18,270 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 18:32:18,294 [INFO] 页面上下文已关闭
+2026-01-09 18:32:18,798 [INFO] 浏览器实例已关闭
+2026-01-09 18:35:18,566 [INFO] 开始启动浏览器实例
+2026-01-09 18:35:19,395 [INFO] 浏览器实例启动成功
+2026-01-09 18:35:21,526 [INFO] 开始获取全局公共参数
+2026-01-09 18:35:21,526 [INFO] 正在请求登录接口获取token
+2026-01-09 18:35:21,526 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 18:35:23,873 [INFO] 接口调用成功: 200
+2026-01-09 18:35:25,918 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 18:35:25,919 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 18:35:25,919 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 18:35:25,948 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:35:30,374 [INFO] 接口调用成功: 200
+2026-01-09 18:35:32,419 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:35:35,280 [INFO] 接口调用成功: 200
+2026-01-09 18:35:37,354 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 18:35:37,354 [INFO] 成功获取到值: 2601091317204005426
+2026-01-09 18:35:37,377 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 18:35:37,378 [INFO] 成功获取到值: 412321596
+2026-01-09 18:35:37,403 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 18:35:37,403 [INFO] 成功获取到值: 25005
+2026-01-09 18:35:37,424 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 18:35:37,424 [INFO] 成功获取到值: 9324667
+2026-01-09 18:35:37,440 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 18:35:37,440 [INFO] 成功获取到值: 876346
+2026-01-09 18:35:37,461 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 18:35:37,461 [INFO] 成功获取到值: LULAIZHOUYU60919
+2026-01-09 18:35:37,478 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 18:35:37,479 [INFO] 成功获取到值: 鲁寿渔65877
+2026-01-09 18:35:37,481 [INFO] 获取到的参数: targetId=2601091317204005426, mmsi=412321596, callSign=25005, imo=9324667, terminal=876346, vesselName=LULAIZHOUYU60919, shipName=鲁寿渔65877
+2026-01-09 18:35:39,519 [INFO] 全局公共参数获取成功
+2026-01-09 18:35:39,520 [INFO] 开始创建页面并执行登录
+2026-01-09 18:35:39,823 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 18:35:55,603 [INFO] 正在执行登录操作
+2026-01-09 18:35:56,882 [INFO] 登录成功
+2026-01-09 18:35:59,025 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 18:35:59,559 [INFO] 正在点击目标类型按钮: 雷 达
+2026-01-09 18:36:01,749 [INFO] 正在点击目标类型按钮: AIS_A
+2026-01-09 18:36:03,919 [INFO] 正在点击目标类型按钮: AIS_B
+2026-01-09 18:36:06,066 [INFO] 正在点击目标类型按钮: 雷达AIS_A
+2026-01-09 18:36:08,218 [INFO] 正在点击目标类型按钮: 雷达AIS_B
+2026-01-09 18:36:10,404 [INFO] 正在点击目标类型按钮: 其 他
+2026-01-09 18:36:13,444 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 18:36:13,472 [INFO] 页面上下文已关闭
+2026-01-09 18:36:13,924 [INFO] 浏览器实例已关闭
+2026-01-09 18:41:01,942 [INFO] 开始启动浏览器实例
+2026-01-09 18:41:02,798 [INFO] 浏览器实例启动成功
+2026-01-09 18:41:04,896 [INFO] 开始获取全局公共参数
+2026-01-09 18:41:04,896 [INFO] 正在请求登录接口获取token
+2026-01-09 18:41:04,896 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 18:41:07,473 [INFO] 接口调用成功: 200
+2026-01-09 18:41:09,520 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 18:41:09,520 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 18:41:09,520 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 18:41:09,521 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:41:13,418 [INFO] 接口调用成功: 200
+2026-01-09 18:41:15,461 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:41:18,787 [INFO] 接口调用成功: 200
+2026-01-09 18:41:20,850 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 18:41:20,850 [INFO] 成功获取到值: 2601091504304029977
+2026-01-09 18:41:20,877 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 18:41:20,877 [INFO] 成功获取到值: 538006628
+2026-01-09 18:41:20,905 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 18:41:20,905 [INFO] 成功获取到值: V7PG8
+2026-01-09 18:41:20,925 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 18:41:20,925 [INFO] 成功获取到值: 9398759
+2026-01-09 18:41:20,943 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 18:41:20,943 [INFO] 成功获取到值: 876714
+2026-01-09 18:41:20,968 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 18:41:20,968 [INFO] 成功获取到值: TOSCO QIANAN
+2026-01-09 18:41:20,985 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 18:41:20,986 [INFO] 成功获取到值: 鲁寿渔65190
+2026-01-09 18:41:20,986 [INFO] 获取到的参数: targetId=2601091504304029977, mmsi=538006628, callSign=V7PG8, imo=9398759, terminal=876714, vesselName=TOSCO QIANAN, shipName=鲁寿渔65190
+2026-01-09 18:41:23,029 [INFO] 全局公共参数获取成功
+2026-01-09 18:41:23,030 [INFO] 开始创建页面并执行登录
+2026-01-09 18:41:23,276 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 18:41:37,502 [INFO] 正在执行登录操作
+2026-01-09 18:41:41,936 [INFO] 登录成功
+2026-01-09 18:41:44,123 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 18:41:44,806 [INFO] 正在点击目标类型按钮: 雷 达
+2026-01-09 18:41:47,035 [INFO] 正在点击目标类型按钮: AIS_A
+2026-01-09 18:41:49,184 [INFO] 正在点击目标类型按钮: AIS_B
+2026-01-09 18:41:51,329 [INFO] 正在点击目标类型按钮: 雷达AIS_A
+2026-01-09 18:41:53,482 [INFO] 正在点击目标类型按钮: 雷达AIS_B
+2026-01-09 18:41:55,617 [INFO] 正在点击目标类型按钮: 其 他
+2026-01-09 18:41:58,860 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 18:41:58,885 [INFO] 页面上下文已关闭
+2026-01-09 18:41:59,368 [INFO] 浏览器实例已关闭
+2026-01-09 18:43:32,982 [INFO] 开始启动浏览器实例
+2026-01-09 18:43:33,681 [INFO] 浏览器实例启动成功
+2026-01-09 18:43:35,761 [INFO] 开始获取全局公共参数
+2026-01-09 18:43:35,762 [INFO] 正在请求登录接口获取token
+2026-01-09 18:43:35,762 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/uaa/user/login
+2026-01-09 18:43:38,442 [INFO] 接口调用成功: 200
+2026-01-09 18:43:40,487 [INFO] 尝试从JSON路径 $.data.tokenValue 获取值
+2026-01-09 18:43:40,487 [INFO] 成功获取到值: 12545320-0b86-4b2c-845d-f3c21f373842
+2026-01-09 18:43:40,487 [INFO] 正在请求目标接口获取公共参数
+2026-01-09 18:43:40,504 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:43:43,720 [INFO] 接口调用成功: 200
+2026-01-09 18:43:45,760 [INFO] 正在调用接口: POST http://10.100.0.184:11080/api/targetv2/target/all/simplified
+2026-01-09 18:43:49,029 [INFO] 接口调用成功: 200
+2026-01-09 18:43:51,103 [INFO] 尝试从JSON路径 $.data.data[*][0] 获取值
+2026-01-09 18:43:51,104 [INFO] 成功获取到值: 2601030649394005005
+2026-01-09 18:43:51,126 [INFO] 尝试从JSON路径 $.data.data[*][2] 获取值
+2026-01-09 18:43:51,126 [INFO] 成功获取到值: 413537550
+2026-01-09 18:43:51,152 [INFO] 尝试从JSON路径 $.data.data[*][32] 获取值
+2026-01-09 18:43:51,152 [INFO] 成功获取到值: BPHM4
+2026-01-09 18:43:51,175 [INFO] 尝试从JSON路径 $.data.data[*][31] 获取值
+2026-01-09 18:43:51,175 [INFO] 成功获取到值: 9559327
+2026-01-09 18:43:51,190 [INFO] 尝试从JSON路径 $.data.data[*][21] 获取值
+2026-01-09 18:43:51,190 [INFO] 成功获取到值: 876469
+2026-01-09 18:43:51,214 [INFO] 尝试从JSON路径 $.data.data[*][14] 获取值
+2026-01-09 18:43:51,215 [INFO] 成功获取到值: LI HUA 28
+2026-01-09 18:43:51,228 [INFO] 尝试从JSON路径 $.data.data[*][13] 获取值
+2026-01-09 18:43:51,229 [INFO] 成功获取到值: 鲁寿渔60036
+2026-01-09 18:43:51,230 [INFO] 获取到的参数: targetId=2601030649394005005, mmsi=413537550, callSign=BPHM4, imo=9559327, terminal=876469, vesselName=LI HUA 28, shipName=鲁寿渔60036
+2026-01-09 18:43:53,277 [INFO] 全局公共参数获取成功
+2026-01-09 18:43:53,278 [INFO] 开始创建页面并执行登录
+2026-01-09 18:43:53,583 [INFO] 正在导航到登录页面: http://10.100.0.184:11080/login
+2026-01-09 18:44:07,716 [INFO] 正在执行登录操作
+2026-01-09 18:44:13,071 [INFO] 登录成功
+2026-01-09 18:44:16,583 [INFO] 首次执行：点击【目标筛选】→【高级筛选】
+2026-01-09 18:44:21,152 [INFO] 正在点击目标类型按钮: 雷 达
+2026-01-09 18:44:23,316 [INFO] 正在点击目标类型按钮: AIS_A
+2026-01-09 18:44:25,471 [INFO] 正在点击目标类型按钮: AIS_B
+2026-01-09 18:44:27,619 [INFO] 正在点击目标类型按钮: 雷达AIS_A
+2026-01-09 18:44:29,761 [INFO] 正在点击目标类型按钮: 雷达AIS_B
+2026-01-09 18:44:31,936 [INFO] 正在点击目标类型按钮: 其 他
+2026-01-09 18:44:35,265 [ERROR] 添加Allure附件时出错: type object 'AttachmentType' has no attribute 'APPLICATION_ZIP'
+2026-01-09 18:44:35,307 [INFO] 页面上下文已关闭
+2026-01-09 18:44:35,775 [INFO] 浏览器实例已关闭

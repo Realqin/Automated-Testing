@@ -1,0 +1,11 @@
+2025-12-16 14:40:03,185 [INFO] 开始执行测试用例: test_target_search_by_field[imo]
+2025-12-16 14:40:03,185 [INFO] 正在搜索 IMO: 9699476
+2025-12-16 14:40:10,160 [INFO] 接口返回状态码: 200
+2025-12-16 14:40:10,165 [INFO] 从JSON路径 $..callSign 获取值: ['BTNQ', None, 'XCBE8', 'BTNQ']
+2025-12-16 14:40:10,165 [INFO] 从JSON路径 $..targetId 获取值: [None, None, None, None]
+2025-12-16 14:40:10,165 [INFO] 从JSON路径 $..mmsi 获取值: [413478720, 9699476, 345050072, 413740864]
+2025-12-16 14:40:10,165 [INFO] 从JSON路径 $..vesselName 获取值: ['HAIYANGSHIYOU614', 'G', 'HAIYANGSHIYOU614', 'HAI*YANG SHI YOU 210']
+2025-12-16 14:40:10,165 [INFO] 从JSON路径 $..shipName 获取值: [None, None, None, None]
+2025-12-16 14:40:10,166 [INFO] 从JSON路径 $..imo 获取值: ['9699476', None, '9699476', '9699476']
+2025-12-16 14:40:10,166 [INFO] 期望值: 9699476, 实际返回值: [['BTNQ', None, 413478720, 'HAIYANGSHIYOU614', None, '9699476'], [None, None, 9699476, 'G', None, None], ['XCBE8', None, 345050072, 'HAIYANGSHIYOU614', None, '9699476'], ['BTNQ', None, 413740864, 'HAI*YANG SHI YOU 210', None, '9699476']]
+2025-12-16 14:40:10,167 [INFO] 测试用例执行完成: test_target_search_by_field[imo]

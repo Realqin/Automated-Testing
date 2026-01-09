@@ -1,0 +1,11 @@
+2025-12-16 14:36:44,762 [INFO] 开始执行测试用例: test_target_search_by_field[imo]
+2025-12-16 14:36:44,762 [INFO] 正在搜索 IMO: 1038602
+2025-12-16 14:36:50,798 [INFO] 接口返回状态码: 200
+2025-12-16 14:36:50,803 [INFO] 从JSON路径 $..callSign 获取值: ['5LOD6']
+2025-12-16 14:36:50,803 [INFO] 从JSON路径 $..targetId 获取值: [None]
+2025-12-16 14:36:50,803 [INFO] 从JSON路径 $..mmsi 获取值: [636023529]
+2025-12-16 14:36:50,803 [INFO] 从JSON路径 $..vesselName 获取值: ['ANJI FLOURISHMENT']
+2025-12-16 14:36:50,803 [INFO] 从JSON路径 $..shipName 获取值: [None]
+2025-12-16 14:36:50,803 [INFO] 从JSON路径 $..imo 获取值: ['1038602']
+2025-12-16 14:36:50,803 [INFO] 期望值: 1038602, 实际返回值: [['5LOD6', None, 636023529, 'ANJI FLOURISHMENT', None, '1038602']]
+2025-12-16 14:36:50,805 [INFO] 测试用例执行完成: test_target_search_by_field[imo]

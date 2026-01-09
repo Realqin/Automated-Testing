@@ -1,0 +1,8 @@
+INFO     automated_testing:logger.py:40 开始执行测试用例: test_target_search_by_field[callSign]
+INFO     automated_testing:logger.py:40 正在搜索 呼号: BTAW
+INFO     automated_testing:logger.py:40 接口返回状态码: 200
+INFO     automated_testing:logger.py:40 从JSON路径 $..callSign 获取值: ['BTAW', 'BTAW', 'T[VER0L']
+INFO     automated_testing:logger.py:40 从JSON路径 $..targetId 获取值: [None, None, None]
+INFO     automated_testing:logger.py:40 从JSON路径 $..mmsi 获取值: [412000120, 413241782, 506907062]
+INFO     automated_testing:logger.py:40 期望值: BTAW, 实际返回值: [['BTAW', None, 412000120], ['BTAW', None, 413241782], ['T[VER0L', None, 506907062]]
+INFO     automated_testing:logger.py:40 测试用例执行完成: test_target_search_by_field[callSign]

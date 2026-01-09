@@ -1,0 +1,11 @@
+2025-12-16 14:40:00,522 [INFO] 开始执行测试用例: test_target_search_by_field[callSign]
+2025-12-16 14:40:00,522 [INFO] 正在搜索 呼号: BTNQ
+2025-12-16 14:40:03,173 [INFO] 接口返回状态码: 200
+2025-12-16 14:40:03,178 [INFO] 从JSON路径 $..callSign 获取值: ['BTNQ', 'BTNQ', 'BTNQ', 'BVD Y', None, '^UIF0']
+2025-12-16 14:40:03,178 [INFO] 从JSON路径 $..targetId 获取值: [None, None, None, None, None, None]
+2025-12-16 14:40:03,179 [INFO] 从JSON路径 $..mmsi 获取值: [413478720, 413740864, 413475840, 742186820, 357601265, 103022960]
+2025-12-16 14:40:03,179 [INFO] 从JSON路径 $..vesselName 获取值: ['HAI YANG SHI YOU 614', 'HAI*YANG SHI YOU 210', 'HAI YANG #HI YOU 614', 'GPBTNQ LIWOO', '8BTNQF1N7H C', 'CL]SG BBTNQXJD4BZ8[C']
+2025-12-16 14:40:03,179 [INFO] 从JSON路径 $..shipName 获取值: [None, None, None, None, None, None]
+2025-12-16 14:40:03,179 [INFO] 从JSON路径 $..imo 获取值: ['9699476', '9699476', '8651092', '15677800', None, None]
+2025-12-16 14:40:03,179 [INFO] 期望值: BTNQ, 实际返回值: [['BTNQ', None, 413478720, 'HAI YANG SHI YOU 614', None, '9699476'], ['BTNQ', None, 413740864, 'HAI*YANG SHI YOU 210', None, '9699476'], ['BTNQ', None, 413475840, 'HAI YANG #HI YOU 614', None, '8651092'], ['BVD Y', None, 742186820, 'GPBTNQ LIWOO', None, '15677800'], [None, None, 357601265, '8BTNQF1N7H C', None, None], ['^UIF0', None, 103022960, 'CL]SG BBTNQXJD4BZ8[C', None, None]]
+2025-12-16 14:40:03,181 [INFO] 测试用例执行完成: test_target_search_by_field[callSign]

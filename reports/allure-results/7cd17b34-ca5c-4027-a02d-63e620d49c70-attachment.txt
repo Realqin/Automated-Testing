@@ -1,0 +1,11 @@
+2025-12-16 14:40:17,387 [INFO] 开始执行测试用例: test_target_search_by_field[vesselName]
+2025-12-16 14:40:17,387 [INFO] 正在搜索 北斗船名: JILEYUYANG00647
+2025-12-16 14:40:19,688 [INFO] 接口返回状态码: 200
+2025-12-16 14:40:19,693 [INFO] 从JSON路径 $..callSign 获取值: [None]
+2025-12-16 14:40:19,694 [INFO] 从JSON路径 $..targetId 获取值: [None]
+2025-12-16 14:40:19,694 [INFO] 从JSON路径 $..mmsi 获取值: [412284199]
+2025-12-16 14:40:19,694 [INFO] 从JSON路径 $..vesselName 获取值: ['JILEYUYANG00647']
+2025-12-16 14:40:19,694 [INFO] 从JSON路径 $..shipName 获取值: [None]
+2025-12-16 14:40:19,695 [INFO] 从JSON路径 $..imo 获取值: [None]
+2025-12-16 14:40:19,695 [INFO] 期望值: JILEYUYANG00647, 实际返回值: [[None, None, 412284199, 'JILEYUYANG00647', None, None]]
+2025-12-16 14:40:19,697 [INFO] 测试用例执行完成: test_target_search_by_field[vesselName]
