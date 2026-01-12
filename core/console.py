@@ -1,5 +1,8 @@
 import json
 
+from core.logger import show_auto_close_message
+
+
 #console返回的数据格式为：{"2512161632394061916":"30.4","2512160637024012186":"20.8"},需要把字符串里的数据提取出来
 def get_RealTimeTargetLog_data(data):
     """
@@ -29,3 +32,20 @@ def get_RealTimeTargetLog_data(data):
     result_list = list(parsed_data.values())
     
     return result_list
+
+
+# 弹框提示console过滤后的结果，并返回
+def get_result_from_console(page, filter_key: str):
+    result = page.wait_for_function(f"""
+               async () => {{
+                   if (!window.g || typeof window.g.openRealTimeTargetLog !== 'function') 
+                       return false;
+                   const data = await window.g.openRealTimeTargetLog('{filter_key}');
+                   // 自定义就绪条件，例如：有 logs 数组且非空
+                   return data
+               }}
+           """).json_value()
+    final_result = get_RealTimeTargetLog_data(result)
+    if result:
+        show_auto_close_message(f"{filter_key} 筛选结果: {final_result}", "目标筛选")
+    return final_result
